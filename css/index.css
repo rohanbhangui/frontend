@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueUltraLight';
+    src: url('../font/HelveticaNeueUltraLight/HelveticaNeueUltraLight.eot');
+    src: url('../font/HelveticaNeueUltraLight/HelveticaNeueUltraLight.eot?#iefix') format('embedded-opentype'),
+         url('../font/HelveticaNeueUltraLight/HelveticaNeueUltraLight.ttf')  format('truetype'),
+         url('../font/HelveticaNeueUltraLight/HelveticaNeueUltraLight.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('../font/HelveticaNeueLight/HelveticaNeueLight.eot');
+    src: url('../font/HelveticaNeueLight/HelveticaNeueLight.eot?#iefix') format('embedded-opentype'),
+         url('../font/HelveticaNeueLight/HelveticaNeueLight.ttf')  format('truetype'),
+         url('../font/HelveticaNeueLight/HelveticaNeueLight.svg#svgFontName') format('svg');
+
+}
+
+@font-face {
+    font-family: 'MyriadProLight';
+    src: url('../font/MyriadProLight/MyriadProLight.eot');
+    src: url('../font/MyriadProLight/MyriadProLight.eot?#iefix') format('embedded-opentype'),
+         url('../font/MyriadProLight/MyriadProLight.woff') format('woff'),
+         url('../font/MyriadProLight/MyriadProLight.ttf')  format('truetype'),
+         url('../font/MyriadProLight/MyriadProLight.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../font/MyriadPro/MyriadPro.eot');
+    src: url('../font/MyriadPro/MyriadPro.eot?#iefix') format('embedded-opentype'),
+         url('../font/MyriadPro/MyriadPro.woff') format('woff'),
+         url('../font/MyriadPro/MyriadPro.ttf')  format('truetype'),
+         url('../font/MyriadPro/MyriadPro.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'MavenProLight200';
+    src: url('../font/MavenProLight200/MavenProLight200.eot');
+    src: url('../font/MavenProLight200/MavenProLight200.eot?#iefix') format('embedded-opentype'),
+         url('../font/MavenProLight200/MavenProLight200.woff') format('woff'),
+         url('../font/MavenProLight200/MavenProLight200.ttf')  format('truetype'),
+         url('../font/MavenProLight200/MavenProLight200.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'MavenProLight300';
+    src: url('../font/MavenProLight300/MavenProLight300.eot');
+    src: url('../font/MavenProLight300/MavenProLight300.eot?#iefix') format('embedded-opentype'),
+         url('../font/MavenProLight300/MavenProLight300.woff') format('woff'),
+         url('../font/MavenProLight300/MavenProLight300.ttf')  format('truetype'),
+         url('../font/MavenProLight300/MavenProLight300.svg#svgFontName') format('svg');
+}
+
