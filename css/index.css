@@ -13,8 +13,40 @@
 }
 
 .button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 7px 20px;
     border: none;
-    background: #ff0000;
+    background: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    outline: none;
+}
+
+/* to normalize the hegiht between buttons and links that act like buttons */
+input.button {
+    font-size: 1.12em;
+}
+
+.button:active {
+    position: relative;
+    top:3px;
+    box-shadow: none;
+}
+
+.primary {
+    background: #eaeaea;
+    color: #484848;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+.secondary {
+    background: #484848;
+    color: #fff;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.83);
 }
