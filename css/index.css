@@ -41,8 +41,8 @@ input.button {
 }
 
 .primary {
-    background: #eaeaea;
-    color: #484848;
+    background: #d1d1d1;
+    color: #666;
     /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);*/
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -50,7 +50,7 @@ input.button {
 }
 
 .primary:hover {
-    background: #f8f8f8;
+    background: #ebebeb;
 }
 
 .secondary {
