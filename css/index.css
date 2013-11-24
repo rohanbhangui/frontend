@@ -43,6 +43,11 @@ body {
     transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
+.button, .button:hover {
+    border-style: solid;
+    border-width: 3px;
+}
+
 /* to normalize the hegiht between buttons and links that act like buttons */
 input.button {
     font-size: 1.37em;
@@ -56,7 +61,7 @@ input.button {
 
 .primary {
     background: #f6f6f6;
-    border: 2px solid #f6f6f6;
+    border-color:#f6f6f6;
     color: #666;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -65,14 +70,13 @@ input.button {
 
 .primary:hover {
     background: none;
-    border: 2px solid #f6f6f6;
     padding: 3px 16px;
     color: #f6f6f6;
 }
 
 .secondary {
     background: #666;
-    border: 2px solid #666;
+    border-color:#666;
     color: #fff;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -81,7 +85,6 @@ input.button {
 
 .secondary:hover {
     background: none;
-    border: 2px solid #666;
     padding: 3px 16px;
     color: #666;
 }
