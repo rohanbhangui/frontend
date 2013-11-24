@@ -73,7 +73,7 @@ body {
     -ms-user-select: none;
     user-select: none;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
     background: none;
     cursor: pointer;
@@ -82,9 +82,9 @@ body {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
     -webkit-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
     -moz-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
     -o-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
