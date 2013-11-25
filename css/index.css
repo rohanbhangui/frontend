@@ -1,8 +1,9 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "SourceSansProRegular", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: subpixel-antialiased;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
@@ -64,9 +65,11 @@
 body {
     background: #f6f6f6;
 }
+
+.disabled {
+    pointer-events: none;
+}
 .button {
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
-    font-weight: 600;
 /*    text-transform: uppercase;*/
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -126,8 +129,8 @@ body {
 }
 
 .button.success {
-    background: #63E67A;
-    border: 1px solid #63E67A;
+    background: #63e67a;
+    border: 1px solid #63e67a;
     color: #fff;
 }
 
@@ -171,7 +174,43 @@ body {
 
 .button.disabled {
     background: #f6f6f6;
-    border: 1px solid #e8e8e8;
-    color: #e8e8e8;
-    pointer-events: none;
+    border: 1px solid #bfbfbf;
+    color: #bfbfbf;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    font-size: 1.00em;
+    font-weight: none;
+    background: none;
+    color: #484848;
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 2px solid #e8e8e8;
+    -webkit-transition: border-color 0.3s ease;
+    -moz-transition: border-color 0.3s ease;
+    -o-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #484848;
+}
+
+input[type="text"].error {
+    border: 2px solid #ff6157;
+    color: #ff6157;
+}
+
+input[type="text"].success {
+    border: 2px solid #4cd964;
+    color: #4cd964;
+}
+
+input[type="text"].disabled {
+    border: 2px solid #aaa;
+    color: #aaa;
 }
