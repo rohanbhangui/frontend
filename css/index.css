@@ -66,7 +66,8 @@ body {
 }
 .button {
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    font-weight: 600;
+/*    text-transform: uppercase;*/
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -100,26 +101,77 @@ body {
     box-shadow: none;
 }
 
-.primary {
+.button.primary {
     background: #f6f6f6;
     border: 1px solid #e8e8e8;
-    color: #666;
+    color: #484848;
 }
 
-.primary:hover {
-    background: #666;
-    border-color: #666;
+.button.primary:hover {
+    background: #484848;
+    border-color: #484848;
     color: #f6f6f6;
 }
 
-.secondary {
-    background: #666;
-    border: 1px solid #666;
+.button.secondary {
+    background: #484848;
+    border: 1px solid #484848;
     color: #f6f6f6;
 }
 
-.secondary:hover{
+.button.secondary:hover{
     background: #f6f6f6;
     border-color: #e8e8e8;
-    color: #666;
+    color: #484848;
+}
+
+.button.success {
+    background: #63E67A;
+    border: 1px solid #63E67A;
+    color: #fff;
+}
+
+.button.success:hover {
+    background-color: #4cd964;
+    border-color: #4cd964;
+}
+
+.button.error {
+    background: #ff6157;
+    border: 1px solid #ff6157;
+    color: #fff;
+}
+
+.button.error:hover {
+    background-color: #ff3b30;
+    border-color: #ff3b30;
+}
+
+.button.warning {
+    background: #ffd547;
+    border: 1px solid #ffd547;
+    color: #fff;
+}
+
+.button.warning:hover {
+    background-color: #FFCA14;
+    border-color: #FFCA14;
+}
+
+.button.info {
+    background: #49BAEB;
+    border: 1px solid #49BAEB;
+    color: #fff;
+}
+
+.button.info:hover {
+    background-color: #34AADC;
+    border-color: #34AADC;
+}
+
+.button.disabled {
+    background: #f6f6f6;
+    border: 1px solid #e8e8e8;
+    color: #e8e8e8;
+    pointer-events: none;
 }
