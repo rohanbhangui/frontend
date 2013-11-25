@@ -1,4 +1,4 @@
-The FlatDesign Project
+The Flat Design Project
 ========
 
 Mission: to provide a "just add water" frontend framework for easy, quick prototyping of flat web design.
