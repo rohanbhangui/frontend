@@ -179,6 +179,18 @@ body {
     color: #bfbfbf;
 }
 
+a:not(.button) {
+    color: #0000ff;
+}
+
+a:not(.button):active {
+    color: #ff0000;
+}
+
+a:not(.button):visited {
+    color: #6600ff;
+}
+
 input[type="text"] {
     padding: 12px 14.5px;
     font-size: 1.00em;
