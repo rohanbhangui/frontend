@@ -204,8 +204,8 @@ input[type="text"].success {
 }
 
 input[type="text"].disabled {
-    border: 2px solid #aaa;
-    color: #aaa;
+    border: 2px solid #bbb;
+    color: #bbb;
 }
 
 input[type="radio"] {
