@@ -90,6 +90,7 @@ body {
     -webkit-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
+    min-width: 113px;
     -webkit-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
     -moz-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
     -o-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
@@ -97,7 +98,10 @@ body {
 }
 
 
-/* to normalize the height between buttons and links that act like buttons */
+/* to normalize the width between buttons and links that act like buttons */
+a.button {
+    padding: 12px 26px;
+}
 
 .button:active {
     position: relative;
@@ -183,12 +187,12 @@ a:not(.button) {
     color: #0000ff;
 }
 
-a:not(.button):active {
+a:not(.button):active, a:not(.button):visited:active {
     color: #ff0000;
 }
 
 a:not(.button):visited {
-    color: #6600ff;
+    color: rgb(85, 26, 139);
 }
 
 input[type="text"] {
