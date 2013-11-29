@@ -263,9 +263,9 @@ input[type="radio"] {
     -moz-appearance: none;
     appearance: none;
     background: #bbb;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
     width: 20px;
     height: 20px;
     vertical-align: top;
@@ -277,15 +277,20 @@ input[type="radio"] {
 input[type="radio"]:checked {
     -webkit-appearance: none;
     -moz-appearance: none;
+    -ms-appearance: none;
+    -ms-appearance: button;
+    -o-appearance: none;
     appearance: none;
     width: 20px;
     height: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
-input[type="radio"].light {
+
+/*everything except ie radio button stuff*/
+input[type="radio"].light:not(input[type="radio"].light::-ms-check) {
     background: #bbb;
 }
 
@@ -294,11 +299,34 @@ input[type="radio"].light:checked {
     border: 5px solid #bbb;
 }
 
-input[type="radio"].dark {
+/* ie stuff radio button stuff*/
+input[type="radio"].light::-ms-check {
+    background: #bbb;
+    color: #484848;
+    border: 1.5px solid #bbb;
+    background-size: 100% 100%;
+}
+
+/*everything except ie radio button stuff*/
+/*input[type="radio"].dark:not(input[type="radio"].dark::-ms-check) {
     background: #484848;
 }
 
-input[type="radio"].dark:checked {
+input[type="radio"].dark:checked:not(input[type="radio"].dark:checked::-ms-check) {
     background: #bbb;
     border: 5px solid #484848;
+}*/
+
+/* ie stuff radio button stuff */
+/*input[type="radio"].dark::-ms-check {
+    background: #484848;
+    border: 1px solid #484848;
 }
+
+
+input[type="radio"].dark:checked::-ms-check {
+    background: #484848;
+    border: 5px solid #bbb;
+    height: 0px;
+    width: 0px;
+}*/
