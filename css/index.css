@@ -325,27 +325,3 @@ input[type="radio"].dark::-ms-check {
     height: auto;
     border: 1.5px solid #484848;
 }
-
-/*everything except ie radio button stuff*/
-/*input[type="radio"].dark:not(input[type="radio"].dark::-ms-check) {
-    background: #484848;
-}
-
-input[type="radio"].dark:checked:not(input[type="radio"].dark:checked::-ms-check) {
-    background: #bbb;
-    border: 5px solid #484848;
-}*/
-
-/* ie stuff radio button stuff */
-/*input[type="radio"].dark::-ms-check {
-    background: #484848;
-    border: 1px solid #484848;
-}
-
-
-input[type="radio"].dark:checked::-ms-check {
-    background: #484848;
-    border: 5px solid #bbb;
-    height: 0px;
-    width: 0px;
-}*/
