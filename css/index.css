@@ -172,19 +172,19 @@ a.button {
 }
 
 .button.warning:hover {
-    background-color: #FFCA14;
-    border-color: #FFCA14;
+    background-color: #ffca14;
+    border-color: #ffca14;
 }
 
 .button.info {
-    background: #49BAEB;
-    border: 1px solid #49BAEB;
+    background: #49baeb;
+    border: 1px solid #49baeb;
     color: #fff;
 }
 
 .button.info:hover {
-    background-color: #34AADC;
-    border-color: #34AADC;
+    background-color: #34aadc;
+    border-color: #34aadc;
 }
 
 .button.disabled {
@@ -219,7 +219,18 @@ input[type="text"] {
     outline: none;
 }
 
-/* ie fix */
+input[type="text"].error::-webkit-input-placeholder {
+   color: rgba(72, 72, 72, 0.5);
+}
+
+input[type="text"].error:-moz-placeholder {
+   color: rgba(72, 72, 72, 0.5);  
+}
+
+input[type="text"].error::-moz-placeholder {
+   color: rgba(72, 72, 72, 0.5);  
+}
+
 input[type="text"]:-ms-input-placeholder {  
    color: rgba(72, 72, 72, 0.5);  
 }
@@ -230,19 +241,19 @@ input[type="text"].error {
 }
 
 input[type="text"].error::-webkit-input-placeholder {
-   color: #ffada8;
+   color: rgba(255, 173, 168, 0.5);
 }
 
 input[type="text"].error:-moz-placeholder {
-   color: #ffada8;  
+   color: rgba(255, 173, 168, 0.5);  
 }
 
 input[type="text"].error::-moz-placeholder {
-   color: #ffada8;  
+   color: rgba(255, 173, 168, 0.5);  
 }
 
 input[type="text"].error:-ms-input-placeholder {  
-   color: #ffada8;  
+   color: rgba(255, 173, 168, 0.5);  
 }
 
 input[type="text"].success {
@@ -251,19 +262,19 @@ input[type="text"].success {
 }
 
 input[type="text"].success::-webkit-input-placeholder {
-   color: #b6e0bd;
+   color: rgba(182, 224, 189, 0.5);
 }
 
 input[type="text"].success:-moz-placeholder {
-   color: #b6e0bd;  
+   color: rgba(182, 224, 189, 0.5);  
 }
 
 input[type="text"].success::-moz-placeholder {
-   color: #b6e0bd;  
+   color: rgba(182, 224, 189, 0.5);  
 }
 
 input[type="text"].success:-ms-input-placeholder {  
-   color: #b6e0bd;  
+   color: rgba(182, 224, 189, 0.5);  
 }
 
 input[type="text"].disabled {
