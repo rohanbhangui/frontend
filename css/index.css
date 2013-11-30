@@ -3,7 +3,7 @@
     padding: 0px;
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
     color: #484848;
-    font-weight: 600;
+    -webkit-text-stroke: 0.35px;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -61,6 +61,14 @@
     src: url('../font/RobotoRegular/RobotoRegular.eot?#iefix') format('embedded-opentype'),
          url('../font/RobotoRegular/RobotoRegular.ttf')  format('truetype'),
          url('../font/RobotoRegular/RobotoRegular.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'IconFont';
+    src: url('../font/IconFont/IconFont.eot');
+    src: url('../font/IconFont/IconFont.eot?#iefix') format('embedded-opentype'),
+         url('../font/IconFont/IconFont.ttf')  format('truetype'),
+         url('../font/IconFont/IconFont.svg#svgFontName') format('svg');
 }
 
 body {
@@ -211,6 +219,11 @@ input[type="text"] {
     outline: none;
 }
 
+/* ie fix */
+input[type="text"]:-ms-input-placeholder {  
+   color: rgba(72, 72, 72, 0.5);  
+}
+
 input[type="text"].error {
     border: 2px solid #ff3b30;
     color: #ff3b30;
@@ -258,7 +271,7 @@ input[type="text"].disabled {
     color: #bbb;
 }
 
-input[type="radio"] {
+/*input[type="radio"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -288,7 +301,6 @@ input[type="radio"]:checked {
 }
 
 
-/*everything except ie radio button stuff*/
 input[type="radio"].light:not(input[type="radio"].light::-ms-check) {
     background: #bbb;
 }
@@ -298,7 +310,6 @@ input[type="radio"].light:checked {
     border: 5px solid #bbb;
 }
 
-/* ie stuff radio button stuff*/
 input[type="radio"].light::-ms-check {
     background: #bbb;
     color: #484848;
@@ -307,8 +318,7 @@ input[type="radio"].light::-ms-check {
     border: 1.5px solid #bbb;
 }
 
-/*everything except ie radio button stuff*/
-input[type="radio"].dark:not(input[type="radio"].dark::-ms-check) {
+input[type="radio"].dark {
     background: #484848;
 }
 
@@ -317,11 +327,75 @@ input[type="radio"].dark:checked {
     border: 5px solid #484848;
 }
 
-/* ie stuff radio button stuff*/
 input[type="radio"].dark::-ms-check {
     background: #484848;
     color: #bbb;
     width: auto;
     height: auto;
     border: 1.5px solid #484848;
+}*/
+
+/*input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label:before {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: #bbb;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    vertical-align: top;
+    margin-top: -1px;
+    outline: none;
+}
+
+input[type="radio"]:checked + label:before {
+    content: "\2022";  
+    color: #484848;
+    font-size: 25px;  
+    text-align: center;  
+    line-height: 19px; 
+}
+
+input[type="radio"].dark + label:before {
+    background: #484848;
+}
+
+input[type="radio"].dark:checked + label:before { 
+    color: #bbb;
+}*/
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label:before {
+    content: "\e601";
+    display: inline-block;
+    font-family: "IconFont";
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.1em;
+    margin-right: 3px;
+    margin-top: 0px;
+    vertical-align: top;
+}
+
+input[type="radio"]:checked + label:before {
+    content: "\e600";
+}
+
+input[type="radio"].dark + label:before {
+    content: "\e602";
+}
+
+input[type="radio"].dark:checked + label:before {
+    content: "\e603";
 }
