@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
     color: #484848;
+    -webkit-text-stroke: 0.35px;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -486,8 +487,10 @@ input[type="radio"] {
 input[type="radio"] + label:before {
     font-family: "Checkmark";
     content: "";
+    -webkit-text-stroke: 0px;
     display: inline-block;
     vertical-align: middle;
+    font-size: 1em;
     width: 25px;
     height: 23px;
     margin-top: -3px;
@@ -497,12 +500,12 @@ input[type="radio"] + label:before {
     -moz-border-radius: 20px;
     border-radius: 20px;
     text-align: center;
-    padding-top: 2px;
-    padding-bottom: -2px;
     line-height: 25px;
     background: #f6f6f6;
     border: 1px solid #e8e8e8;
     color: #484848;
+    padding-top: 2px;
+    padding-bottom: -2px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -520,7 +523,7 @@ input[type="radio"]:checked + label:before {
     background: #484848;
     color: #f6f6f6;
     border: 1px solid #484848;
-    
+    vertical-align: top;
 }
 
 @-webkit-keyframes change {
