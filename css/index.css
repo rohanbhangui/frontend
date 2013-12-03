@@ -343,7 +343,7 @@ input[type="radio"].dark:checked::-ms-check {
 }*/
 
 /* ========Style2========= */
-/*input[type="radio"] {
+input[type="radio"] {
     display: none;
 }
 
@@ -353,32 +353,24 @@ input[type="radio"] + label:before {
     font-family: "IconFont";
     line-height: 1;
     -webkit-text-stroke: 0px;
-    font-size: 1.1em;
-    margin-right: 3px;
+    font-size: 1.28em;
+    margin-right: 10px;
     margin-top: 0px;
+    margin-bottom: 10px;
     vertical-align: top;
-    background: #bbb;
+    background: none;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+    font-weight: 500;
     width: 16px;
     height: 16px;
     text-align: left;
-    line-height: 17px;
 }
 
 input[type="radio"]:checked + label:before {
     content: "\e600";
-    background: #bbb;
 }
-
-input[type="radio"].dark + label:before {
-    content: "\e602";
-}
-
-input[type="radio"].dark:checked + label:before {
-    content: "\e603";
-}*/
 
 /* ========Style3========= */
 /*input[type="radio"] {
@@ -415,7 +407,7 @@ input[type="radio"].dark + label:before {
 }*/
 
 /* ========Style4========= */
-input[type="radio"] {
+/*input[type="radio"] {
     display: none;
 }
 
@@ -474,4 +466,4 @@ input[type="radio"]:disabled + label:before {
 
 input[type="radio"]:disabled + label, input[type="radio"]:checked:disabled + label:before {
     color: #eaeaea;
-}
+}*/
