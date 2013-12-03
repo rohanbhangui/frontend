@@ -504,10 +504,10 @@ input[type="radio"] + label:before {
     background: #f6f6f6;
     border: 1px solid #e8e8e8;
     color: #484848;
-    -webkit-transition: background 1s ease, color 1s ease, border 1s ease, content 1s ease;
-    -moz-transition: background 1s ease, color 1s ease, border 1s ease, content 1s ease;
-    -o-transition: background 1s ease, color 1s ease, border 1s ease, content 1s ease;
-    transition: background 1s ease, color 1s ease, border 1s ease, content 1s ease;
+    -webkit-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, content 0.3s ease;
+    -moz-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, content 0.3s ease;
+    -o-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, content 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, content 0.3s ease;
 }
 
 input[type="radio"]:checked + label:before {
