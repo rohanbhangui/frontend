@@ -93,9 +93,10 @@ body {
 :disabled, .disabled {
     pointer-events: none;
 }
+
 .button {
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     display: inline-block;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -482,10 +483,6 @@ input[type="radio"] {
     display: none;
 }
 
-input[type="radio"] + label {
-    margin-top: 10px;
-}
-
 input[type="radio"] + label:before {
     font-family: "Checkmark";
     content: "";
@@ -494,6 +491,8 @@ input[type="radio"] + label:before {
     width: 25px;
     height: 23px;
     margin-top: -3px;
+    margin-right: 5px;
+    margin-left: 10px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -504,14 +503,87 @@ input[type="radio"] + label:before {
     background: #f6f6f6;
     border: 1px solid #e8e8e8;
     color: #484848;
-    -webkit-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, content 0.3s ease;
-    -moz-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, content 0.3s ease;
-    -o-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, content 0.3s ease;
-    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, content 0.3s ease;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 input[type="radio"]:checked + label:before {
     content:"\101";
+    -webkit-animation: change 0.3s 1;
+    -moz-animation: change 0.3s 1;
+    -o-animation: change 0.3s 1;
+    -ms-animation: change 0.3s 1;
+    animation: change 0.3s 1;
     background: #484848;
     color: #f6f6f6;
+    border: 1px solid #484848;
+    
+}
+
+@-webkit-keyframes change {
+    0% {
+        background: #f6f6f6;
+        border: 1px solid #e8e8e8;
+        color: #484848;
+    }
+    100% {
+        background: #484848;
+        color: #f6f6f6;
+        border: 1px solid #484848;
+    }
+}
+
+@-moz-keyframes change {
+    0% {
+        background: #f6f6f6;
+        border: 1px solid #e8e8e8;
+        color: #484848;
+    }
+    100% {
+        background: #484848;
+        color: #f6f6f6;
+        border: 1px solid #484848;
+    }
+}
+
+@-o-keyframes change {
+    0% {
+        background: #f6f6f6;
+        border: 1px solid #e8e8e8;
+        color: #484848;
+    }
+    100% {
+        background: #484848;
+        color: #f6f6f6;
+        border: 1px solid #484848;
+    }
+}
+
+@-ms-keyframes change {
+    0% {
+        background: #f6f6f6;
+        border: 1px solid #e8e8e8;
+        color: #484848;
+    }
+    100% {
+        background: #484848;
+        color: #f6f6f6;
+        border: 1px solid #484848;
+    }
+}
+
+@keyframes change {
+    0% {
+        background: #f6f6f6;
+        border: 1px solid #e8e8e8;
+        color: #484848;
+    }
+    100% {
+        background: #484848;
+        color: #f6f6f6;
+        border: 1px solid #484848;
+    }
 }
