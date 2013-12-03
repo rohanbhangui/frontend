@@ -78,6 +78,14 @@
          url('../font/IconFont/IconFont.svg#svgFontName') format('svg');
 }
 
+@font-face {
+    font-family: 'Checkmark';
+    src: url('../font/Checkmark/Checkmark.eot');
+    src: url('../font/Checkmark/Checkmark.eot?#iefix') format('embedded-opentype'),
+         url('../font/Checkmark/Checkmark.ttf')  format('truetype'),
+         url('../font/Checkmark/Checkmark.svg#svgFontName') format('svg');
+}
+
 body {
     background: #f6f6f6;
 }
@@ -343,7 +351,7 @@ input[type="radio"].dark:checked::-ms-check {
 }*/
 
 /* ========Style2========= */
-input[type="radio"] {
+/*input[type="radio"] {
     display: none;
 }
 
@@ -370,7 +378,7 @@ input[type="radio"] + label:before {
 
 input[type="radio"]:checked + label:before {
     content: "\e600";
-}
+}*/
 
 /* ========Style3========= */
 /*input[type="radio"] {
@@ -467,3 +475,43 @@ input[type="radio"]:disabled + label:before {
 input[type="radio"]:disabled + label, input[type="radio"]:checked:disabled + label:before {
     color: #eaeaea;
 }*/
+
+
+/*================Style5==============*/
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    margin-top: 10px;
+}
+
+input[type="radio"] + label:before {
+    font-family: "Checkmark";
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 23px;
+    margin-top: -3px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: -2px;
+    line-height: 25px;
+    background: #f6f6f6;
+    border: 1px solid #e8e8e8;
+    color: #484848;
+    -webkit-transition: background 1s ease, color 1s ease, border 1s ease, content 1s ease;
+    -moz-transition: background 1s ease, color 1s ease, border 1s ease, content 1s ease;
+    -o-transition: background 1s ease, color 1s ease, border 1s ease, content 1s ease;
+    transition: background 1s ease, color 1s ease, border 1s ease, content 1s ease;
+}
+
+input[type="radio"]:checked + label:before {
+    content:"\101";
+    background: #484848;
+    color: #f6f6f6;
+}
