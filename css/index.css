@@ -441,9 +441,9 @@ input[type="radio"] + label:before {
     -moz-border-radius: 20px;
     border-radius: 20px;
     color: #666;
-    font-size: 26px;
+    font-size: 32px;
     text-align: center;
-    line-height: 1pc;
+    line-height: 15px;
     -webkit-transition: color 0.3s ease, border 0.3s ease;
     -moz-transition: color 0.3s ease, border 0.3s ease;
     -o-transition: color 0.3s ease, border 0.3s ease;
