@@ -72,19 +72,11 @@
 }
 
 @font-face {
-    font-family: 'IconFont';
-    src: url('../font/IconFont/IconFont.eot');
-    src: url('../font/IconFont/IconFont.eot?#iefix') format('embedded-opentype'),
-         url('../font/IconFont/IconFont.ttf')  format('truetype'),
-         url('../font/IconFont/IconFont.svg#svgFontName') format('svg');
-}
-
-@font-face {
-    font-family: 'Checkmark';
-    src: url('../font/Checkmark/Checkmark.eot');
-    src: url('../font/Checkmark/Checkmark.eot?#iefix') format('embedded-opentype'),
-         url('../font/Checkmark/Checkmark.ttf')  format('truetype'),
-         url('../font/Checkmark/Checkmark.svg#svgFontName') format('svg');
+    font-family: 'FontAwesome';
+    src: url('../font/FontAwesome/FontAwesome.eot');
+    src: url('../font/FontAwesome/FontAwesome.eot?#iefix') format('embedded-opentype'),
+         url('../font/FontAwesome/FontAwesome.ttf')  format('truetype'),
+         url('../font/FontAwesome/FontAwesome.svg#svgFontName') format('svg');
 }
 
 body {
@@ -485,27 +477,25 @@ input[type="radio"] {
 }
 
 input[type="radio"] + label:before {
-    font-family: "Checkmark";
+    font-family: "FontAwesome";
     content: "";
-    -webkit-text-stroke: 0px;
     display: inline-block;
-    vertical-align: middle;
-    font-size: 1em;
-    width: 25px;
+    line-height: 23px;
+    vertical-align: top;
+    -webkit-text-stroke: 0px;
     height: 23px;
+    width: 23px;
+    font-size: 1em;
     margin-top: -3px;
+    margin-left: 7px;
     margin-right: 5px;
-    margin-left: 10px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
     text-align: center;
-    line-height: 25px;
     background: #f6f6f6;
     border: 1px solid #e8e8e8;
     color: #484848;
-    padding-top: 2px;
-    padding-bottom: -2px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -514,7 +504,7 @@ input[type="radio"] + label:before {
 }
 
 input[type="radio"]:checked + label:before {
-    content:"\101";
+    content:"\f00C";
     -webkit-animation: change 0.3s 1;
     -moz-animation: change 0.3s 1;
     -o-animation: change 0.3s 1;
@@ -523,7 +513,6 @@ input[type="radio"]:checked + label:before {
     background: #484848;
     color: #f6f6f6;
     border: 1px solid #484848;
-    vertical-align: top;
 }
 
 @-webkit-keyframes change {
