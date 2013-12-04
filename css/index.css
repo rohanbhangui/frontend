@@ -1,18 +1,9 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-    color: #484848;
-    -webkit-text-stroke: 0.35px;
-    -webkit-font-smoothing: antialiased;
-}
-
 @font-face {
-    font-family: 'HeleveticaNeue';
-    src: url('../font/HeleveticaNeue/HeleveticaNeue.eot');
-    src: url('../font/HeleveticaNeue/HeleveticaNeue.eot?#iefix') format('embedded-opentype'),
-         url('../font/HeleveticaNeue/HeleveticaNeue.ttf')  format('truetype'),
-         url('../font/HeleveticaNeue/HeleveticaNeue.svg#svgFontName') format('svg');
+    font-family: 'HelveticaNeue';
+    src: url('../font/HelveticaNeue/HelveticaNeue.eot');
+    src: url('../font/HelveticaNeue/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+         url('../font/HelveticaNeue/HelveticaNeue.ttf')  format('truetype'),
+         url('../font/HelveticaNeue/HelveticaNeue.svg#svgFontName') format('svg');
 }
 
 @font-face {
@@ -77,6 +68,15 @@
     src: url('../font/FontAwesome/FontAwesome.eot?#iefix') format('embedded-opentype'),
          url('../font/FontAwesome/FontAwesome.ttf')  format('truetype'),
          url('../font/FontAwesome/FontAwesome.svg#svgFontName') format('svg');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    color: #484848;
+    -webkit-text-stroke: 0.35px;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -217,7 +217,8 @@ a:not(.button):visited {
 
 input[type="text"] {
     padding: 12px 14.5px;
-    font-size: 1.00em;
+    width: 174px;
+    font-size: 1em;
     font-weight: none;
     background: none;
     color: #484848;
