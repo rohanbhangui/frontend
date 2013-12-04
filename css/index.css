@@ -505,11 +505,19 @@ input[type="radio"] + label:before {
     background: #f6f6f6;
     border: 1px solid #999;
     color: #484848;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+}
+
+input[type="radio"]:not(:disabled) + label:before {
+    -webkit-animation: change 0.3s 1;
+    -moz-animation: change 0.3s 1;
+    -o-animation: change 0.3s 1;
+    -ms-animation: change 0.3s 1;
+    animation: change 0.3s 1;
+    -webkit-animation-direction: reverse;
+    -moz-animation-direction: reverse;
+    -o-animation-direction: reverse;
+    -ms-animation-direction: reverse;
+    animationanimation-direction: reverse;
 }
 
 input[type="radio"]:checked:not(:disabled) + label:before {
@@ -566,11 +574,19 @@ input[type="checkbox"] + label:before {
     background: #f6f6f6;
     border: 1px solid #999;
     color: #484848;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+}
+
+input[type="checkbox"]:not(:disabled) + label:before {
+    -webkit-animation: change 0.3s 1;
+    -moz-animation: change 0.3s 1;
+    -o-animation: change 0.3s 1;
+    -ms-animation: change 0.3s 1;
+    animation: change 0.3s 1;
+    -webkit-animation-direction: reverse;
+    -moz-animation-direction: reverse;
+    -o-animation-direction: reverse;
+    -ms-animation-direction: reverse;
+    animationanimation-direction: reverse;
 }
 
 input[type="checkbox"]:checked:not(:disabled) + label:before {
