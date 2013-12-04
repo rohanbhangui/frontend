@@ -83,6 +83,11 @@ body {
     background: #f6f6f6;
 }
 
+.container {
+    width: 960px;
+    margin: 100px auto;
+}
+
 :disabled, .disabled {
     pointer-events: none;
 }
@@ -104,14 +109,14 @@ body {
     min-width: 115px;
     text-align: center;
     background: #f6f6f6;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #dbdbdb;
     color: #484848;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-/*    -webkit-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
     -webkit-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
     -moz-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
     -o-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
@@ -144,7 +149,7 @@ a.button {
 
 .button.secondary:hover{
     background: #f6f6f6;
-    border-color: #e8e8e8;
+    border-color: #dbdbdb;
     color: #484848;
 }
 
@@ -480,9 +485,11 @@ input[type="radio"] + label:before {
     font-family: "FontAwesome";
     content: "";
     display: inline-block;
-    line-height: 23px;
     vertical-align: top;
     -webkit-text-stroke: 0px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 23px;
     height: 23px;
     width: 23px;
     font-size: 1em;
@@ -492,9 +499,8 @@ input[type="radio"] + label:before {
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    text-align: center;
     background: #f6f6f6;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #999;
     color: #484848;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -503,7 +509,7 @@ input[type="radio"] + label:before {
     transition: all 0.3s;
 }
 
-input[type="radio"]:checked + label:before {
+input[type="radio"]:checked:not(:disabled) + label:before {
     content:"\f00C";
     -webkit-animation: change 0.3s 1;
     -moz-animation: change 0.3s 1;
@@ -515,10 +521,90 @@ input[type="radio"]:checked + label:before {
     border: 1px solid #484848;
 }
 
+input[type="radio"]:not(:checked):not(:disabled) + label:hover:before {
+    border: 1px solid #333;
+}
+
+input[type="radio"]:disabled + label:before {
+    background: #f6f6f6;
+    color: #bfbfbf;
+    border: 1px solid #bfbfbf;
+}
+
+input[type="radio"]:disabled + label {
+    color: #bfbfbf;
+}
+
+input[type="radio"]:checked:disabled + label:before {
+    content:"\f00C";
+}
+
+/*============checkbox stuff ================*/
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label:before {
+    font-family: "FontAwesome";
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    -webkit-text-stroke: 0px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 23px;
+    height: 23px;
+    width: 23px;
+    font-size: 1em;
+    margin-top: -3px;
+    margin-left: 7px;
+    margin-right: 5px;
+    background: #f6f6f6;
+    border: 1px solid #999;
+    color: #484848;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type="checkbox"]:checked:not(:disabled) + label:before {
+    content:"\f00C";
+    -webkit-animation: change 0.3s 1;
+    -moz-animation: change 0.3s 1;
+    -o-animation: change 0.3s 1;
+    -ms-animation: change 0.3s 1;
+    animation: change 0.3s 1;
+    background: #484848;
+    color: #f6f6f6;
+    border: 1px solid #484848;
+}
+
+input[type="checkbox"]:not(:checked):not(:disabled) + label:hover:before {
+    border: 1px solid #333;
+}
+
+input[type="checkbox"]:disabled + label:before {
+    background: #f6f6f6;
+    color: #bfbfbf;
+    border: 1px solid #bfbfbf;
+}
+
+input[type="checkbox"]:disabled + label {
+    color: #bfbfbf;
+}
+
+input[type="checkbox"]:checked:disabled + label:before {
+    content:"\f00C";
+}
+
+
 @-webkit-keyframes change {
     0% {
         background: #f6f6f6;
-        border: 1px solid #e8e8e8;
+        border: 1px solid #dbdbdb;
         color: #484848;
     }
     100% {
@@ -531,7 +617,7 @@ input[type="radio"]:checked + label:before {
 @-moz-keyframes change {
     0% {
         background: #f6f6f6;
-        border: 1px solid #e8e8e8;
+        border: 1px solid #dbdbdb;
         color: #484848;
     }
     100% {
@@ -544,7 +630,7 @@ input[type="radio"]:checked + label:before {
 @-o-keyframes change {
     0% {
         background: #f6f6f6;
-        border: 1px solid #e8e8e8;
+        border: 1px solid #dbdbdb;
         color: #484848;
     }
     100% {
@@ -557,7 +643,7 @@ input[type="radio"]:checked + label:before {
 @-ms-keyframes change {
     0% {
         background: #f6f6f6;
-        border: 1px solid #e8e8e8;
+        border: 1px solid #dbdbdb;
         color: #484848;
     }
     100% {
@@ -570,7 +656,7 @@ input[type="radio"]:checked + label:before {
 @keyframes change {
     0% {
         background: #f6f6f6;
-        border: 1px solid #e8e8e8;
+        border: 1px solid #dbdbdb;
         color: #484848;
     }
     100% {
