@@ -83,6 +83,7 @@
 
 body {
     background: #f6f6f6;
+    text-align:center;
 }
 
 .container {
@@ -507,6 +508,10 @@ input[type="radio"] + label:before {
     color: #484848;
 }
 
+input[type="radio"] + label {
+    cursor: pointer;
+}
+
 input[type="radio"]:not(:disabled) + label:before {
     -webkit-animation: change 0.3s 1;
     -moz-animation: change 0.3s 1;
@@ -574,6 +579,10 @@ input[type="checkbox"] + label:before {
     background: #f6f6f6;
     border: 1px solid #999;
     color: #484848;
+}
+
+input[type="checkbox"] + label {
+    cursor: pointer;
 }
 
 input[type="checkbox"]:not(:disabled) + label:before {
