@@ -83,6 +83,7 @@
 
 body {
     background: #f6f6f6;
+    text-align:center;
 }
 
 .container {
@@ -295,8 +296,6 @@ input[type="text"]:disabled {
     color: #bbb;
 }
 
-/*================Style5==============*/
-
 input[type="checkbox"],
 input[type="radio"] {
     display: none;
@@ -304,6 +303,7 @@ input[type="radio"] {
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
+	cursor: pointer;
 	position: relative;
 }
 
@@ -393,59 +393,3 @@ input[type="radio"]:checked + label:after {
     content:"\f00C";
     color: #f6f6f6;
 }
-
-/*============ checkbox stuff ================*/
-/*
-input[type="checkbox"] {
-    display: none;
-}
-
-input[type="checkbox"] + label:before {
-    font-family: "FontAwesome";
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    -webkit-text-stroke: 0px;
-    text-align: center;
-    cursor: pointer;
-    line-height: 23px;
-    height: 23px;
-    width: 23px;
-    font-size: 1em;
-    margin-top: -3px;
-    margin-left: 7px;
-    margin-right: 5px;
-    background: #f6f6f6;
-    border: 1px solid #999;
-    color: #484848;
-}
-
-input[type="checkbox"]:not(:disabled) + label:before {
-
-}
-
-input[type="checkbox"]:checked:not(:disabled) + label:before {
-    content:"\f00C";
-    background: #484848;
-    color: #f6f6f6;
-    border: 1px solid #484848;
-}
-
-input[type="checkbox"]:not(:checked):not(:disabled) + label:hover:before {
-    border: 1px solid #333;
-}
-
-input[type="checkbox"]:disabled + label:before {
-    background: #f6f6f6;
-    color: #bfbfbf;
-    border: 1px solid #bfbfbf;
-}
-
-input[type="checkbox"]:disabled + label {
-    color: #bfbfbf;
-}
-
-input[type="checkbox"]:checked:disabled + label:before {
-    content:"\f00C";
-}
-*/
