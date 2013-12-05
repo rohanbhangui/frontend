@@ -1,0 +1,50 @@
+/* input text */
+
+$input-text-color: $dark-grey;
+$input-text-border: $dark-grey;
+$input-text-placeholder-color: #989898;
+
+$input-text-error-color: $error-secondary-color;
+$input-text-error-border: $error-secondary-color;
+$input-text-error-placeholder-color: rgba(255, 173, 168, 0.7);
+
+$input-text-success-color: $success-secondary-color;
+$input-text-success-border: $success-secondary-color;
+$input-text-success-placeholder-color: rgba(182, 224, 189, 0.7);
+
+$input-text-disabled-color: #BBBBBB;
+$input-text-disabled-border: #BBBBBB;
+$input-text-disabled-placeholder-color: #989898;
+
+input[type="text"] {
+    padding: 12px 14.5px;
+    width: 174px;
+    font-size: 1em;
+    font-weight: none;
+    background: none;
+    color: #484848;
+    border: none;
+    border-radius: 2px;
+    border: 2px solid #484848;
+    outline: none;
+}
+
+@each $input in
+	('.success',	$input-text-success-color,	$input-text-success-border, 	$input-text-success-placeholder-color)
+	,('.error', 	$input-text-error-color, 	$input-text-error-border, 		$input-text-error-placeholder-color)
+	,(':disabled',	$input-text-disabled-color, $input-text-disabled-border,	$input-text-disabled-placeholder-color)
+
+	{
+
+	input[type="text"]#{nth($input, 1)} {
+	    color: #{nth($input, 2)};
+	    border: 2px solid #{nth($input, 3)};
+	}
+
+	@each $placeholder in '::-webkit-input-placeholder', '::-moz-placeholder', ':-moz-placeholder', ':-ms-input-placeholder' {
+		input[type="text"]#{nth($input, 1)}#{$placeholder} {
+			color:  #{nth($input, 4)};
+		}
+	}
+
+}

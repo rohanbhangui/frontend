@@ -1,0 +1,105 @@
+/* checkbox/radio */
+
+$input-checkbox-radio-width: 25px;
+$input-checkbox-radio-height: $input-checkbox-radio-width;
+$input-checkbox-radio-border-radius: $input-checkbox-radio-width;
+
+$input-checkbox-radio-background: $light-grey;
+$input-checkbox-radio-border: #333333;
+$input-checkbox-radio-text: $dark-grey;
+
+$input-checkbox-radio-box-shadow-checked: $dark-grey;
+$input-checkbox-radio-border-checked: $dark-grey;
+$input-checkbox-radio-text-checked: $light-grey;
+
+$input-checkbox-radio-disabled-background: $light-grey;
+$input-checkbox-radio-disabled-border: $lighter-dark-grey;
+$input-checkbox-radio-disabled-text: $lighter-dark-grey;
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	cursor: pointer;
+	position: relative;
+}
+
+input[type="checkbox"] + label::before,
+input[type="checkbox"] + label::after,
+input[type="radio"] + label::before,
+input[type="radio"] + label::after {
+    font-family: "FontAwesome";
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    line-height: 23px;
+    height: $input-checkbox-radio-height;
+    width: $input-checkbox-radio-width;
+    margin-top: -3px;
+    font-size: 1em;
+    margin: 0 5px;
+    -webkit-text-stroke: 0px;
+    @include vendor-prefix(box-sizing, border-box);
+    @include vendor-prefix(transition, box-shadow 0.3s ease);
+}
+
+input[type="radio"] + label::before,
+input[type="radio"] + label::after {
+	border-radius: $input-checkbox-radio-border-radius;
+}
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+    background: $input-checkbox-radio-background;
+    border: 1px solid $input-checkbox-radio-border;
+    color: $input-checkbox-radio-text;
+}
+
+input[type="checkbox"] + label::after,
+input[type="radio"] + label::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: none;
+    color: $input-checkbox-radio-text-checked;
+}
+
+input[type="checkbox"]:checked:disabled + label::after,
+input[type="radio"]:checked:disabled + label::after,
+input[type="checkbox"]:checked + label::after,
+input[type="radio"]:checked + label::after {
+    content:"\f00C";
+}
+
+input[type="checkbox"]:checked:not(:disabled) + label::before,
+input[type="radio"]:checked:not(:disabled) + label::before {
+    content:"";
+    box-shadow: inset 0 0 0 15px $input-checkbox-radio-box-shadow-checked;
+    color: $input-checkbox-radio-text-checked;
+    border: none;
+}
+
+input[type="checkbox"]:not(:checked):not(:disabled) + label:hover::before,
+input[type="radio"]:not(:checked):not(:disabled) + label:hover::before {
+    border: 1px solid $input-checkbox-radio-border;
+}
+
+input[type="checkbox"]:disabled + label::before,
+input[type="radio"]:disabled + label::before {
+    background: $input-checkbox-radio-disabled-background;
+    color: $input-checkbox-radio-disabled-text;
+    border: 1px solid $input-checkbox-radio-disabled-border;
+}
+
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label,
+input[type="checkbox"]:disabled + label::after,
+input[type="radio"]:disabled + label::after {
+    color: $input-checkbox-radio-disabled-text;
+}

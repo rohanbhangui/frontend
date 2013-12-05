@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../font/HelveticaNeue/HelveticaNeue.eot');
+    src: url('../font/HelveticaNeue/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+         url('../font/HelveticaNeue/HelveticaNeue.ttf')  format('truetype'),
+         url('../font/HelveticaNeue/HelveticaNeue.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@each $font in MontserratBold, Montserrat, FontAwesome {
+
+	@font-face {
+	    font-family: '#{$font}';
+	    src: url('../font/#{$font}/#{$font}.eot');
+	    src: url('../font/#{$font}/#{$font}.eot?#iefix') format('embedded-opentype'),
+	         url('../font/#{$font}/#{$font}.ttf')  format('truetype'),
+	         url('../font/#{$font}/#{$font}.svg#svgFontName') format('svg');
+	}
+
+}

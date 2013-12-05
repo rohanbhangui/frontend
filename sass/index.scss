@@ -1,0 +1,41 @@
+@import "mixins";
+@import "colors";
+
+@import "fonts";
+@import "buttons";
+@import "input_text";
+@import "input_radio_checkbox";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    color: #484848;
+    -webkit-text-stroke: 0.35px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #f6f6f6;
+}
+
+.container {
+    width: 960px;
+    margin: 100px auto;
+}
+
+a:not(.button) {
+    color: #0000ff;
+}
+
+a:not(.button):active, a:not(.button):visited:active {
+    color: #ff0000;
+}
+
+a:not(.button):visited {
+    color: rgb(85, 26, 139);
+}
+
+:disabled, .disabled {
+    pointer-events: none;
+}

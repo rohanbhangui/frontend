@@ -1,0 +1,108 @@
+/* buttons */
+
+$button-background: $light-grey;
+$button-border: $grey;
+$button-text: $dark-grey;
+$button-hover-background: $dark-grey;
+$button-hover-border: $dark-grey;
+$button-hover-text: $light-grey;
+
+$button-secondary-background: $dark-grey;
+$button-secondary-border: $dark-grey;
+$button-secondary-text: $light-grey;
+$button-secondary-hover-background: $light-grey;
+$button-secondary-hover-border: $grey;
+$button-secondary-hover-text: $dark-grey;
+
+$button-success-background: $success-primary-color;
+$button-success-border: $success-primary-color;
+$button-success-text: $white;
+$button-success-hover-background: $success-secondary-color;
+$button-success-hover-border: $success-secondary-color;
+$button-success-hover-text: $white;
+
+$button-error-background: $error-primary-color;
+$button-error-border: $error-primary-color;
+$button-error-text: $white;
+$button-error-hover-background: $error-secondary-color;
+$button-error-hover-border: $error-secondary-color;
+$button-error-hover-text: $white;
+
+$button-warning-background: $warning-primary-color;
+$button-warning-border: $warning-primary-color;
+$button-warning-text: $white;
+$button-warning-hover-background: $warning-secondary-color;
+$button-warning-hover-border: $warning-secondary-color;
+$button-warning-hover-text: $white;
+
+$button-info-background: $info-primary-color;
+$button-info-border: $info-primary-color;
+$button-info-text: $white;
+$button-info-hover-background: $info-secondary-color;
+$button-info-hover-border: $info-secondary-color;
+$button-info-hover-text: $white;
+
+$button-disabled-background: $disabled-primary-color;
+$button-disabled-border: #E8E8E8;
+$button-disabled-text: $lighter-dark-grey;
+$button-disabled-hover-background: #E8E8E8;
+$button-disabled-hover-border: $lighter-dark-grey;
+$button-disabled-hover-text: $button-disabled-text;
+
+/* to normalize the width between buttons and links that act like buttons */
+a.button {
+    min-width: 75px;
+}
+
+.button {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1.05em;
+    outline: none;
+    min-width: 115px;
+    text-align: center;
+    background: $button-background;
+    border: 1px solid $button-border;
+    color: $button-text;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.2);
+	-webkit-touch-callout: none;
+	@include vendor-prefix(transition, "background 0.3s ease, color 0.3s ease, border 0.3s ease");
+	@include vendor-prefix(user-select, none);
+	&:hover {
+    	background: $button-hover-background;
+    	border-color: $button-hover-border;
+    	color: $button-hover-text;
+	}
+	&:active {
+		position: relative;
+    	top: 2px;
+    	box-shadow: none;
+	}
+}
+
+@each $button in
+	(secondary, $button-secondary-background, 	$button-secondary-border, 	$button-secondary-text, $button-secondary-hover-background, $button-secondary-hover-border, $button-secondary-hover-text)
+	,(success, 	$button-success-background, 	$button-success-border,		$button-success-text, 	$button-success-hover-background, 	$button-success-hover-border, 	$button-success-hover-text)
+	,(error, 	$button-error-background, 		$button-error-border, 		$button-error-text, 	$button-error-hover-background, 	$button-error-hover-border, 	$button-error-hover-text)
+	,(warning, 	$button-warning-background, 	$button-warning-border, 	$button-warning-text, 	$button-warning-hover-background, 	$button-warning-hover-border, 	$button-warning-hover-text)
+	,(info, 	$button-info-background, 		$button-info-border, 		$button-info-text, 		$button-info-hover-background, 		$button-info-hover-border, 		$button-info-hover-text)
+	,(disabled,	$button-disabled-background, 	$button-disabled-border, 	$button-disabled-text, 	$button-disabled-hover-background, 	$button-disabled-hover-border, $button-disabled-hover-text)
+
+	{
+
+	.button.#{nth($button, 1)} {
+		background: #{nth($button, 2)};
+		border-color: #{nth($button, 3)};
+		color: #{nth($button, 4)};
+		&:hover {
+			background: #{nth($button, 5)};
+			border-color: #{nth($button, 6)};
+			color: #{nth($button, 7)};
+		}
+	}
+
+}
