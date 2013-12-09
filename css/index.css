@@ -263,6 +263,21 @@ input[type="checkbox"]:disabled + label::after,
 input[type="radio"]:disabled + label::after {
   color: #bfbfbf; }
 
+/* select menu */
+/*
+select {
+	display: none;
+}
+*/
+.select {
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none; }
+  .select .select li {
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none; }
+
 * {
   margin: 0px;
   padding: 0px;
