@@ -1,0 +1,161 @@
+/* grid */
+
+$width: 960px;
+$max-width: 1140px;
+
+// todo make variables
+// make testpage to show usage
+
+.fixed,
+.fixed-fluid,
+.fluid {
+    margin: 0 auto;
+}
+
+.fixed {
+    width: $width;
+    min-width: $width;
+}
+
+.fixed-fluid {
+    max-width: $max-width;
+    width: auto;
+}
+
+.fluid {
+    width: 90%;
+}
+
+.fixed:before, .fixed:after,
+.fixed-fluid:before, .fixed-fluid:after,
+.fluid:before, .fluid:after,
+.row:before, .row:after {
+    display: table;
+    content: " ";
+}
+.fixed:after,
+.fixed-fluid:after,
+.fluid:after,
+.row:after {
+    clear: both;
+}
+.fixed,
+.fixed-fluid,
+.fluid,
+.row {
+    overflow: hidden;
+    *zoom: 1;
+}
+
+/* ==================== *\
+- Column/s Class
+\* ==================== */
+
+.column,
+.columns {
+    position: relative;
+    float: left;
+    min-height: 1px;
+}
+
+.column.centered,
+.columns.centered {
+    position: relative;
+    float: none;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.fixed .column,
+.fixed .columns {
+    padding-right: 1.4583333333333333333333333333333%;
+    padding-left: 1.4583333333333333333333333333333%;
+}
+
+.fixed-fluid .column,
+.fixed-fluid .columns {
+    padding-right: 1.2280701754385964912280701754386%;
+    padding-left: 1.2280701754385964912280701754386%;
+}
+
+.fluid .column,
+.fluid .columns {
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+}
+
+
+.fixed .row .row {
+    margin-right: -1.4583333333333333333333333333333%;
+    margin-left: -1.4583333333333333333333333333333%;
+}
+
+.fixed-fluid .row .row {
+    margin-right: -1.2280701754385964912280701754386%;
+    margin-left: -1.2280701754385964912280701754386%;
+}
+
+.fluid .row .row {
+    margin-right: -1.5%;
+    margin-left: -1.5%;
+}
+
+.show-large {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.hide-large {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+@each $column in
+	 (one 		, 8.3333333333333333333333333333333%)
+	,(two 		, 16.666666666666666666666666666667%)
+	,(three 	, 25%)
+	,(four  	, 33.333333333333333333333333333333%)
+	,(five  	, 41.666666666666666666666666666667%)
+	,(six 		, 50%)
+	,(seven 	, 58.333333333333333333333333333333%)
+	,(eight 	, 66.666666666666666666666666666666%)
+	,(nine  	, 75%)
+	,(ten 		, 83.333333333333333333333333333333%)
+	,(eleven 	, 91.666666666666666666666666666666%)
+	,(twelve 	, 100%)
+
+	{
+
+		/* columns widths */
+
+		.fixed .#{nth($column, 1)}-large,
+		.fixed-fluid .#{nth($column, 1)}-large,
+		.fluid .#{nth($column, 1)}-large {
+			width: #{nth($column, 2)};
+		}
+
+    	/* push columns */
+
+		.fixed .push-#{nth($column, 1)},
+		.fixed-fluid .push-#{nth($column, 1)},
+		.fluid .push-#{nth($column, 1)} {
+			left: #{nth($column, 2)};
+		}
+
+		/* pull columns*/
+
+		.fixed .pull-#{nth($column, 1)},
+		.fixed-fluid .pull-#{nth($column, 1)},
+		.fluid .pull-#{nth($column, 1)} {
+			right: #{nth($column, 2)};
+		}
+
+		/* offset */
+
+		.fixed .offset-#{nth($column, 1)},
+		.fixed-fluid .offset-#{nth($column, 1)},
+		.fluid .offset-#{nth($column, 1)} {
+			margin-left: #{nth($column, 2)};
+		}
+
+	}

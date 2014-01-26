@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>front end framework</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="scripts/index.js"></script>
+	<link rel="stylesheet" media="screen" type="text/css" href="css/index.css"/>
+
+	<link rel="shortcut icon" href="favicon.ico" />
+
+	<style>
+		.gridColor {
+		    background: hsl(81, 85%, 75%);
+		    color: #ffffff;
+		}
+
+		.add-margin {
+		    margin-top: 20px;
+		    margin-bottom: 20px;
+		}
+
+		.add-padding {
+		    padding-top: 20px;
+		    padding-bottom: 20px;
+		}
+
+		.column,
+		.columns {
+			padding: 1em;
+			color: white !important;
+		    border: 1px solid hsl(81, 50%, 50%);
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="fixed add-margin">
+		<div class="row gridColor">
+			<div class="twelve-large columns text-center">
+				<h1>Fixed Width Layout</h1>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="six-large columns">
+				<h3>Six</h3>
+			</div>
+			<div class="six-large columns">
+				<h3>Six</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="four-large columns">
+				<h3>Four</h3>
+			</div>
+			<div class="four-large columns">
+				<h3>Four</h3>
+			</div>
+			<div class="four-large columns">
+				<h3>Four</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="one-large column">
+				<h3>one</h3>
+			</div>
+			<div class="two-large column">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large column">
+				<h3>Two</h3>
+			</div>
+			<div class="three-large column">
+				<h3>Three</h3>
+			</div>
+			<div class="four-large column">
+				<h3>Four</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="seven-large column">
+				<h3>Seven</h3>
+			</div>
+			<div class="five-large column">
+				<h3>Five</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="fixed-fluid add-margin">
+		<div class="row gridColor">
+			<div class="twelve-large columns text-center">
+				<h1>Fixed-Fluid Width</h1>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="six-large columns">
+				<h3>Six</h3>
+			</div>
+			<div class="six-large columns">
+				<h3>Six</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="four-large columns">
+				<h3>Four</h3>
+			</div>
+			<div class="four-large columns">
+				<h3>Four</h3>
+			</div>
+			<div class="four-large columns">
+				<h3>Four</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="one-large column">
+				<h3>one</h3>
+			</div>
+			<div class="two-large column">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large column">
+				<h3>Two</h3>
+			</div>
+			<div class="three-large column">
+				<h3>Three</h3>
+			</div>
+			<div class="four-large column">
+				<h3>Four</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="seven-large column">
+				<h3>Seven</h3>
+			</div>
+			<div class="five-large column">
+				<h3>Five</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="fluid add-margin">
+		<div class="row gridColor">
+			<div class="twelve-large columns text-center">
+				<h1>Fluid Width</h1>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="six-large columns">
+				<h3>Six</h3>
+			</div>
+			<div class="six-large columns">
+				<h3>Six</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="four-large columns">
+				<h3>Four</h3>
+			</div>
+			<div class="four-large columns">
+				<h3>Four</h3>
+			</div>
+			<div class="four-large columns">
+				<h3>Four</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+			<div class="three-large columns">
+				<h3>Three</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large columns">
+				<h3>Two</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="one-large column">
+				<h3>one</h3>
+			</div>
+			<div class="two-large column">
+				<h3>Two</h3>
+			</div>
+			<div class="two-large column">
+				<h3>Two</h3>
+			</div>
+			<div class="three-large column">
+				<h3>Three</h3>
+			</div>
+			<div class="four-large column">
+				<h3>Four</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="seven-large column">
+				<h3>Seven</h3>
+			</div>
+			<div class="five-large column">
+				<h3>Five</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="fluid add-margin">
+		<div class="row gridColor">
+			<div class="twelve-large columns">
+				<h1>Grid Nesting</h1>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="twelve-large columns">
+				<h3>Twelve Grid Root</h3>
+				<div class="row gridColor">
+					<div class="six-large columns">
+						<h3>Six - First Level Nesting</h3>
+						<div class="row gridColor">
+							<div class="seven-large columns">
+								<h3>Seven - Second Level Nesting</h3>
+								<div class="row gridColor">
+									<div class="twelve-large columns">
+										<h3>Twelve - Third Level Nesting</h3>
+									</div>
+								</div>
+							</div>
+							<div class="five-large columns">
+								<h3>Five - Second Level Nesting</h3>
+								<div class="row gridColor">
+									<div class="twelve-large columns">
+										<h3>Twelve - Third Level Nesting</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="six-large columns">
+						<h3>Six - First Level Nesting</h3>
+						<div class="row gridColor">
+							<div class="four-large columns">
+								<h3>Four - Second Level Nesting</h3>
+								<div class="row gridColor">
+									<div class="twelve-large columns">
+										<h3>Twelve - Third Level Nesting</h3>
+									</div>
+								</div>
+							</div>
+							<div class="eight-large columns">
+								<h3>Eight - Second Level Nesting</h3>
+								<div class="row gridColor">
+									<div class="twelve-large columns">
+										<h3>Twelve - Third Level Nesting</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fluid add-margin">
+		<div class="row gridColor">
+			<div class="twelve-large columns">
+				<h1>Offset/Push/Pull</h1>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="three-large columns push-four">
+				<h3>Push-Four</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="two-large columns pull-eight right">
+				<h3>Pull-Eight</h3>
+			</div>
+		</div>
+		<div class="row gridColor">
+			<div class="three-large columns offset-seven">
+				<h3>Offset-Seven</h3>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

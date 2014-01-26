@@ -6,6 +6,8 @@
 @import "input_text";
 @import "input_radio_checkbox";
 
+@import "grid";
+
 * {
     margin: 0px;
     padding: 0px;
@@ -14,6 +16,15 @@
     -webkit-text-stroke: 0.35px;
     -webkit-font-smoothing: antialiased;
 }
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 
 body {
     background: #f6f6f6;
