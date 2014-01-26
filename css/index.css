@@ -264,6 +264,12 @@ input[type="radio"]:disabled + label::after {
   color: #bfbfbf; }
 
 /* grid */
+.column,
+.columns {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .fixed,
 .fixed-fluid,
 .fluid {
@@ -646,13 +652,6 @@ input[type="radio"]:disabled + label::after {
   color: #484848;
   -webkit-text-stroke: 0.35px;
   -webkit-font-smoothing: antialiased; }
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
 
 body {
   background: #f6f6f6; }
