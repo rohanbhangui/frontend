@@ -1,43 +1,35 @@
 @import "mixins";
-@import "colors";
-
-@import "fonts";
 @import "buttons";
-@import "input_text";
-@import "input_radio_checkbox";
-
-@import "grid";
+/*@import "grid";*/
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #484848;
     -webkit-text-stroke: 0.35px;
     -webkit-font-smoothing: antialiased;
+    @include vendor-prefix(box-sizing, border-box);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
 }
 
 body {
     background: #f6f6f6;
 }
 
-.container {
-    width: 960px;
-    margin: 100px auto;
-}
-
-a:not(.button) {
-    color: #0000ff;
-}
-
-a:not(.button):active, a:not(.button):visited:active {
-    color: #ff0000;
-}
-
-a:not(.button):visited {
-    color: rgb(85, 26, 139);
-}
-
 :disabled, .disabled {
     pointer-events: none;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.button {
+    @include button(#eaeaea, black);
 }

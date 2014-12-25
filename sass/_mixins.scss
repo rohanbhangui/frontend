@@ -5,3 +5,8 @@
 	-o-#{$name}: #{$argument};
 	#{$name}: #{$argument};
 }
+
+@mixin border($weight, $style, $color, $radius) {
+	border: $weight $style $color;
+	@include vendor-prefix(border-radius, $radius);
+}
