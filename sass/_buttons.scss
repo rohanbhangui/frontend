@@ -1,17 +1,22 @@
 @mixin button($background, $color) {
     text-decoration: none;
     color: $color;
-    padding: 10px 15px;
     background: $background;
-    @include vendor-prefix(box-shadow, 0px 0px 10px 0px rgba(0,0,0,0.28));
-    @include border(1px, solid, $background, 5px);
+    padding: 10px 15px;
+    @include vendor-prefix(border-radius, 5px);
     @include vendor-prefix(transition, all ease 0.30s);
+    position: absolute;
+    left: 1000px;
+    margin-top: 100px;
 
-    &.frost {
-       color: transparent;
-       text-shadow: 0 0 10px $color;
-       background: lighten($background, 30%);
-       @include border(1px, solid, rgba(0, 0, 0, 0), 5px);
-       @include vendor-prefix(transition, all ease 0.30s);
+    &.frosted {
+        color: rgba(lighten($color, 10%), 0.1);
+        text-shadow: 0 0 5px rgba(lighten($color, 10%), 0.35);
+        background: rgba($background, 0.5);
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0,0,0,0.20);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0,0,0,0.20);
+        -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0,0,0,0.20);
+        -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0,0,0,0.20);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0,0,0,0.20);
     }
 }

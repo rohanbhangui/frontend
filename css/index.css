@@ -15,34 +15,30 @@
 
 /* line 15, ../sass/index.scss */
 html, body {
-  height: 100%;
+  min-height: 100vh;
   width: 100%; }
 
 /* line 20, ../sass/index.scss */
 body {
-  background: #f6f6f6; }
+  background: url("/images/stuff.jpg") no-repeat 50% 50% fixed;
+  background-size: cover; }
 
-/* line 24, ../sass/index.scss */
+/* line 25, ../sass/index.scss */
 :disabled, .disabled {
   pointer-events: none; }
 
-/* line 28, ../sass/index.scss */
+/* line 29, ../sass/index.scss */
 .container {
   width: 100%;
-  padding: 20px; }
+  padding: 20px;
+  background: inherit; }
 
-/* line 33, ../sass/index.scss */
+/* line 35, ../sass/index.scss */
 .button {
   text-decoration: none;
   color: black;
-  padding: 10px 15px;
   background: #eaeaea;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
-  -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
-  -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
-  border: 1px solid #eaeaea;
+  padding: 10px 15px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -52,22 +48,19 @@ body {
   -moz-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
-  transition: all ease 0.3s; }
-  /* line 10, ../sass/_buttons.scss */
-  .button.frost {
-    color: transparent;
-    text-shadow: 0 0 10px black;
-    background: white;
-    border: 1px solid transparent;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    transition: all ease 0.3s; }
+  transition: all ease 0.3s;
+  position: absolute;
+  left: 1000px;
+  margin-top: 100px; }
+  /* line 12, ../sass/_buttons.scss */
+  .button.frosted {
+    color: rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 5px rgba(26, 26, 26, 0.35);
+    background: rgba(234, 234, 234, 0.5);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0, 0, 0, 0.2); }
 
 /*# sourceMappingURL=index.css.map */
