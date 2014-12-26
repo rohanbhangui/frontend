@@ -20,7 +20,7 @@ html, body {
 
 /* line 20, ../sass/index.scss */
 body {
-  background: url("/images/stuff.jpg") no-repeat 50% 50% fixed;
+  background: url("../images/stuff.jpg") no-repeat 50% 50% fixed;
   background-size: cover; }
 
 /* line 25, ../sass/index.scss */
