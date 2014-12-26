@@ -10,3 +10,7 @@
 	border: $weight $style $color;
 	@include vendor-prefix(border-radius, $radius);
 }
+
+@function origin($path) {
+	@return ".." + $path;
+}

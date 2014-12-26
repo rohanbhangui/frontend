@@ -50,17 +50,21 @@ body {
   -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
   position: absolute;
-  left: 1000px;
-  margin-top: 100px; }
+  left: 750px;
+  margin-top: 500px; }
   /* line 12, ../sass/_buttons.scss */
   .button.frosted {
-    color: rgba(26, 26, 26, 0.1);
-    text-shadow: 0 0 5px rgba(26, 26, 26, 0.35);
-    background: rgba(234, 234, 234, 0.5);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0, 0, 0, 0.2);
-    -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28), inset 0px 0px 56px 0px rgba(0, 0, 0, 0.2); }
+    color: rgba(255, 255, 255, 0.5);
+    background: url("../images/noisy-texture-256x256-o23-d10-c-96153e-t1.png"), #eaeaea;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
+    -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28); }
 
 /*# sourceMappingURL=index.css.map */

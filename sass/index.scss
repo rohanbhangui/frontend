@@ -18,7 +18,7 @@ html, body {
 }
 
 body {
-    background: url('../images/stuff.jpg') no-repeat 50% 50% fixed;
+    background: url(origin("/images/stuff.jpg")) no-repeat 50% 50% fixed;
     background-size: cover;
 }
 

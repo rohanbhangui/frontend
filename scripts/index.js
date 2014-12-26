@@ -37,10 +37,14 @@ function findBackground(element) {
 
 jQuery(function($) {
 
-	html2canvas($("html"), {
-	  onrendered: function(canvas) {
-	    $("body").append(canvas);
-	  }
+	// html2canvas($("html"), {
+	//   onrendered: function(canvas) {
+	//     $("body").append(canvas);
+	//   }
+	// });
+
+	$(".button.frosted").each(function(index) {
+		console.log(findBackground($(this)));
 	});
 
 	//$(".button.frost::before").css("background", findBackground($(this).parent()));
