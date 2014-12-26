@@ -18,20 +18,17 @@ html, body {
   min-height: 100vh;
   width: 100%; }
 
-/* line 20, ../sass/index.scss */
-body {
-  background: url("../images/stuff.jpg") no-repeat 50% 50% fixed;
-  background-size: cover; }
-
-/* line 25, ../sass/index.scss */
+/* line 23, ../sass/index.scss */
 :disabled, .disabled {
   pointer-events: none; }
 
-/* line 29, ../sass/index.scss */
+/* line 27, ../sass/index.scss */
 .container {
   width: 100%;
   padding: 20px;
-  background: inherit; }
+  background: url("../images/stuff.jpg") no-repeat 50% 50% fixed;
+  background-size: cover;
+  position: relative; }
 
 /* line 35, ../sass/index.scss */
 .button {
@@ -50,17 +47,10 @@ body {
   -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
   position: absolute;
-  left: 750px;
-  margin-top: 500px; }
+  left: 750px; }
   /* line 12, ../sass/_buttons.scss */
   .button.frosted {
     color: rgba(255, 255, 255, 0.5);
-    background: url("../images/noisy-texture-256x256-o23-d10-c-96153e-t1.png"), #eaeaea;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
     -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);

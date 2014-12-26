@@ -44,7 +44,14 @@ jQuery(function($) {
 	// });
 
 	$(".button.frosted").each(function(index) {
-		console.log(findBackground($(this)));
+		console.log(findBackground($(this)).replace('url(','').replace(')',''));
+		$(this).css({
+			"background-image": findBackground($(this)).replace('url(','').replace(')',''),
+			"background-clip": 'border-box',
+			"background-color": "none",
+			"backgorund-repeat": "no-repeat"
+		});
+		console.log($(this).css("background"));
 	});
 
 	//$(".button.frost::before").css("background", findBackground($(this).parent()));
