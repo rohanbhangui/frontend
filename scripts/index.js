@@ -25,13 +25,13 @@ function temperatureFrost() {
 }
 
 function findBackground(element) {
-	if(element.parent().css("background-image") != undefined) {
-		console.log("entered: " + element.parent().css("background-image"));
-		return element.parent().css("background-image");
+
+	if(element.css("background-image") == 'none') {
+		return findBackground(element.parent());
 	}
-	else
-	{
-		findBackground(element.parent());
+	else {
+    console.log(element);
+		return element.css("background");
 	}
 }
 
@@ -42,16 +42,27 @@ jQuery(function($) {
 	//     $("body").append(canvas);
 	//   }
 	// });
+	
 
+	// $(".button.frosted").each(function(index) {
+	// 	console.log($(this).css("background"));
+	// 	findBackground($(this).parent()).replace('url(','').replace(')','')
+	// 	var colorThief = new ColorThief();
+	// 	var pallette = colorThief.getPalette(findBackground($(this).parent()).replace('url(','').replace(')',''), 8);
+	// 	console.log(pallette);
+	// 	$(this).css({
+	// 		"background-image": findBackground($(this).parent()),
+	// 		"background-clip": 'border-box',
+	// 		"background-color": "none",
+	// 		"background-repeat": "no-repeat",
+	// 		"background-position": -1*$(this).offset().top + "px " + -1*$(this).offset().left + "px"
+	// 	});
+	// });
+	
 	$(".button.frosted").each(function(index) {
-		console.log(findBackground($(this)).replace('url(','').replace(')',''));
 		$(this).css({
-			"background-image": findBackground($(this)).replace('url(','').replace(')',''),
-			"background-clip": 'border-box',
-			"background-color": "none",
-			"backgorund-repeat": "no-repeat"
+			"background": findBackground($(this).parent()),
 		});
-		console.log($(this).css("background"));
 	});
 
 	//$(".button.frost::before").css("background", findBackground($(this).parent()));

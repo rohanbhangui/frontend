@@ -7,6 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/foggy.min.js"></script>
 
 
     <script type="text/javascript" src="scripts/index.js"></script>
@@ -16,16 +17,15 @@
 
   </head>
   <body>
-    <div class="container">
-        <a href="#" class="button frosted">Button</a>
+    <div class="content">
+      <a href="#" class="button frosted">
+        <div>Button</div> 
+      </a>
     </div>
-
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-      <defs>
-        <filter id="blursvg" x="0" y="0">
-          <feGaussianBlur stdDeviation="3" />
-        </filter>
-      </defs>
+    <svg>
+      <filter id="blur">
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
     </svg>
   </body>
 </html>

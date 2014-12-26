@@ -17,24 +17,71 @@ html, body {
     width: 100%;
 }
 
-body { 
+body {
+    background: url(origin("/images/stuff.jpg")) no-repeat 50% 50% fixed;
+    background-size: cover;
 }
 
 :disabled, .disabled {
     pointer-events: none;
 }
 
-.container {
+a {
+    text-decoration: none;
+}
+
+.content {
     width: 100%;
     padding: 20px;
-    background: url(origin("/images/stuff.jpg")) no-repeat 50% 50% fixed;
-    background-size: cover;
-    position: relative;
 }
 
 .button {
-    @include button(#eaeaea, black);
+    //@include button(#eaeaea, black);
+
+    &.frosted {
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        color: #08c;
+        visibility: hidden;
+        left: 750px;
+        top: 500px;
+
+        &:before {
+            visibility: visible;
+            content: '';
+            position: absolute;
+            width: 110%;
+            height: 110%;
+            top: -5%;
+            bottom: -5%;
+            background: inherit;
+            -webkit-filter: url("#blur") saturate(2);
+            -moz-filter: url("#blur");
+            filter: url("#blur");
+        }
+
+        div {
+            background: rgba(235,235,235,0.6);
+
+            position: relative;
+            display: block;
+            visibility: visible;
+            padding: 25px;
+            -webkit-transition: background 0.3s ease;
+            -moz-transition: background 0.3s ease;
+            -o-transition: background 0.3s ease;
+            -ms-transition: background 0.3s ease;
+            transition: background 0.3s ease;
+
+            &:hover {
+              background: rgba(235,235,235,0.44);
+            }
+        }
+    }
 }
+
+
 
 // .btn-2 {
 //     @include button(#ff0000, black);

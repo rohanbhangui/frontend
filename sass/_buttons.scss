@@ -2,7 +2,7 @@
     text-decoration: none;
     color: $color;
     background: $background;
-    padding: 10px 15px;
+    padding: 100px;
     @include vendor-prefix(border-radius, 5px);
     @include vendor-prefix(transition, all ease 0.30s);
     position: absolute;
@@ -10,15 +10,11 @@
 
 
     &.frosted {
-        color: rgba(#fff, 0.5);
-        // color: rgba(lighten($color, 10%), 0.1);
-        // text-shadow: 0 0 5px rgba(lighten($color, 10%), 0.35);
-        //background: url(origin("/images/noisy-texture-256x256-o23-d10-c-96153e-t1.png")), rgba($background, 1);
-       
-        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
-        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
-        -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
-        -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
+        color: rgba(#000, 0.5);
+
+        &:before {
+            z-index: -1;
+            content: '';
+        }
     }
 }
