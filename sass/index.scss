@@ -39,13 +39,21 @@ a {
     //@include button(#eaeaea, black);
 
     &.frosted {
+        width: 400px;
         position: absolute;
         display: block;
+        line-height: 120px;
+        top: 50%;
+        left: 50%;
+        background: inherit;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
         overflow: hidden;
         color: #08c;
+        margin: -60px -200px;
+        text-decoration: none;
+        font-size: 40px;
         visibility: hidden;
-        left: 750px;
-        top: 500px;
 
         &:before {
             visibility: visible;
@@ -63,11 +71,10 @@ a {
 
         div {
             background: rgba(235,235,235,0.6);
-
+            text-align: center;
             position: relative;
             display: block;
             visibility: visible;
-            padding: 25px;
             -webkit-transition: background 0.3s ease;
             -moz-transition: background 0.3s ease;
             -o-transition: background 0.3s ease;
@@ -75,7 +82,7 @@ a {
             transition: background 0.3s ease;
 
             &:hover {
-              background: rgba(235,235,235,0.44);
+                background: rgba(235,235,235,0.54);
             }
         }
     }

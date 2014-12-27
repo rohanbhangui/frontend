@@ -24,67 +24,25 @@ function temperatureFrost() {
 	console.log($(".button.frost").css("text-shadow"));
 }
 
-function findBackground(element) {
 
-	if(element.css("background-image") == 'none') {
-		return findBackground(element.parent());
-	}
-	else {
-    console.log(element);
-		return element.css("background");
-	}
-}
 
 jQuery(function($) {
 
-	// html2canvas($("html"), {
-	//   onrendered: function(canvas) {
-	//     $("body").append(canvas);
-	//   }
-	// });
-	
-
-	// $(".button.frosted").each(function(index) {
-	// 	console.log($(this).css("background"));
-	// 	findBackground($(this).parent()).replace('url(','').replace(')','')
-	// 	var colorThief = new ColorThief();
-	// 	var pallette = colorThief.getPalette(findBackground($(this).parent()).replace('url(','').replace(')',''), 8);
-	// 	console.log(pallette);
-	// 	$(this).css({
-	// 		"background-image": findBackground($(this).parent()),
-	// 		"background-clip": 'border-box',
-	// 		"background-color": "none",
-	// 		"background-repeat": "no-repeat",
-	// 		"background-position": -1*$(this).offset().top + "px " + -1*$(this).offset().left + "px"
-	// 	});
-	// });
-	
 	$(".button.frosted").each(function(index) {
-		$(this).css({
-			"background": findBackground($(this).parent()),
-		});
+		var $this = $(this),
+	        $parentWithBackground;
+	    
+	    $parentWithBackground = $this.parents().filter(function() {
+	        return $(this).css('background-image') !== 'none'
+	    });
+	    
+	    $(this).css({
+	        "background-image": $parentWithBackground.css("background-image"),
+	        "background-repeat": $parentWithBackground.css("background-repeat"),
+	        "background-size": $parentWithBackground.css("background-size"),
+	        "background-position": $parentWithBackground.css("background-position"),
+	        "background-attachment": $parentWithBackground.css("background-attachment")
+	    });  
 	});
-
-	//$(".button.frost::before").css("background", findBackground($(this).parent()));
-
-	//console.log($(".button.frost::before").css("background"));
-    // var temperatureCycle = setInterval(temperatureFrost, 1000);
-
-    // $(".button.frost").on("mouseenter", function() {
-
-    // 	$(this).css({
-    // 		"text-shadow": "0 0 0 rgba( 0, 0, 0, 0)",
-    // 		"color": $(this).css("text-shadow").match(/(-?\d+px)|(rgb\(.+\))/g)[0],
-    // 	});
-    // 	clearInterval(temperatureCycle);
-    // });
-
-    // $(".button.frost").on("mouseleave", function() {
-    // 	$(this).css({
-    // 		"text-shadow": "0 0 0 " + $(this).css("text-shadow").match(/(-?\d+px)|(rgb\(.+\))/g)[0],
-    // 		"color": "transparent",
-    // 	});
-    // 	temperatureCycle = setInterval(temperatureFrost, 1000);
-    // });
 });
  
