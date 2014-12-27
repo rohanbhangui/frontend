@@ -24,8 +24,6 @@
 // 	console.log($(".button.frost").css("text-shadow"));
 // }
 
-
-
 jQuery(function($) {
 	"use strict";
 
