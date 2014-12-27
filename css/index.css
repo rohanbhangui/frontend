@@ -63,11 +63,11 @@ a {
     top: -5%;
     bottom: -5%;
     background: inherit;
-    -webkit-filter: url("../css/blur.svg#blur");
-    filter: url("../css/blur.svg#blur");
+    -webkit-filter: url("css/blur.svg#blur");
+    filter: url("css/blur.svg#blur");
     o-filter: blur(15px);
     -ms-filter: blur(15px);
-    filter: url("../css/blur.svg#blur"); }
+    filter: url("css/blur.svg#blur"); }
   /* line 75, ../sass/index.scss */
   .button.frosted div {
     background: rgba(235, 235, 235, 0.6);

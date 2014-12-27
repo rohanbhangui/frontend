@@ -64,11 +64,11 @@ a {
             top: -5%;
             bottom: -5%;
             background: inherit;
-            -webkit-filter: url(origin("/css/blur.svg#blur"));
-            filter: url(origin("/css/blur.svg#blur"));
+            -webkit-filter: url("css/blur.svg#blur");
+            filter: url("css/blur.svg#blur");
             o-filter: blur(15px);
             -ms-filter: blur(15px);
-            filter: url(origin("/css/blur.svg#blur"));
+            filter: url("css/blur.svg#blur");
 
         }
 
