@@ -62,12 +62,14 @@ a {
     top: -5%;
     bottom: -5%;
     background: inherit;
-    -webkit-filter: url("#blur");
+    -webkit-filter: url("blur.svg#blur");
+    -moz-filter: url("blur.svg#blur");
+    -ms-filter: url("blur.svg#blur");
+    -o-filter: url("blur.svg#blur");
     filter: url("blur.svg#blur");
-    o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    -moz-filter: url("blur.svg#blur"); }
-  /* line 74, ../sass/index.scss */
+    -webkit-filter: url("css/blur.svg#blur");
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='4'); }
+  /* line 72, ../sass/index.scss */
   .button.frosted div {
     background: rgba(235, 235, 235, 0.6);
     text-align: center;
@@ -79,7 +81,7 @@ a {
     -o-transition: background 0.3s ease;
     -ms-transition: background 0.3s ease;
     transition: background 0.3s ease; }
-    /* line 86, ../sass/index.scss */
+    /* line 84, ../sass/index.scss */
     .button.frosted div:hover {
       background: rgba(235, 235, 235, 0.54); }
 

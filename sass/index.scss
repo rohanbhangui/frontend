@@ -63,11 +63,9 @@ a {
             top: -5%;
             bottom: -5%;
             background: inherit;
-            -webkit-filter: url("#blur");
-            filter: url("blur.svg#blur");
-            o-filter: blur(15px);
-            -ms-filter: blur(15px);
-            -moz-filter: url("blur.svg#blur");
+            @include vendor-prefix(filter, url("blur.svg#blur"));
+            -webkit-filter: url("css/blur.svg#blur");
+            filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 
         }
 
