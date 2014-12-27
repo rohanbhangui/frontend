@@ -54,7 +54,7 @@ a {
   font-size: 40px;
   visibility: hidden; }
   /* line 58, ../sass/index.scss */
-  .button.frosted:before {
+  .button.frosted::before {
     visibility: visible;
     content: '';
     position: absolute;
@@ -63,10 +63,12 @@ a {
     top: -5%;
     bottom: -5%;
     background: inherit;
-    -webkit-filter: url("#blur") saturate(2);
-    -moz-filter: url("#blur");
-    filter: url("#blur"); }
-  /* line 72, ../sass/index.scss */
+    -webkit-filter: url("../css/blur.svg#blur");
+    filter: url("../css/blur.svg#blur");
+    o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: url("../css/blur.svg#blur"); }
+  /* line 75, ../sass/index.scss */
   .button.frosted div {
     background: rgba(235, 235, 235, 0.6);
     text-align: center;
@@ -78,7 +80,7 @@ a {
     -o-transition: background 0.3s ease;
     -ms-transition: background 0.3s ease;
     transition: background 0.3s ease; }
-    /* line 84, ../sass/index.scss */
+    /* line 87, ../sass/index.scss */
     .button.frosted div:hover {
       background: rgba(235, 235, 235, 0.54); }
 

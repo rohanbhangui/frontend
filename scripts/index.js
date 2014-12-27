@@ -1,32 +1,33 @@
-function randomInt(min,max)
-{
-    return Math.floor(Math.random()*(max-min+1)+min);
-}
+// function randomInt(min,max)
+// {
+//     return Math.floor(Math.random()*(max-min+1)+min);
+// }
 
-function temperatureFrost() {
-	var temperature = randomInt(0, 100);
+// function temperatureFrost() {
+// 	var temperature = randomInt(0, 100);
 
-	console.log(temperature);
+// 	console.log(temperature);
 
-	console.log(((100 - temperature) + 1) / 8);
+// 	console.log(((100 - temperature) + 1) / 8);
 	
-	var blurAmount = Math.round(((100 - temperature) + 1) / 8) + "px";
+// 	var blurAmount = Math.round(((100 - temperature) + 1) / 8) + "px";
 
-	console.log(blurAmount)
+// 	console.log(blurAmount)
 
-	var oldBlur = $(".button.frost").css("text-shadow").match(/(-?\d+px)|(rgb\(.+\))/g);
+// 	var oldBlur = $(".button.frost").css("text-shadow").match(/(-?\d+px)|(rgb\(.+\))/g);
 
-	var newBlur = "0px 0px " + blurAmount + " " + oldBlur[0];
+// 	var newBlur = "0px 0px " + blurAmount + " " + oldBlur[0];
 
-	console.log("newBlur: " + newBlur);
+// 	console.log("newBlur: " + newBlur);
 
-	$(".button.frost").css("text-shadow", newBlur);
-	console.log($(".button.frost").css("text-shadow"));
-}
+// 	$(".button.frost").css("text-shadow", newBlur);
+// 	console.log($(".button.frost").css("text-shadow"));
+// }
 
 
 
 jQuery(function($) {
+	"use strict";
 
 	$(".button.frosted").each(function(index) {
 		var $this = $(this),
