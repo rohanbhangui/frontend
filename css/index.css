@@ -486,52 +486,63 @@
   color: #484848;
   -webkit-text-stroke: 0.35px;
   -webkit-font-smoothing: antialiased;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 15, ../sass/index.scss */
+/* line 16, ../sass/index.scss */
 html, body {
   min-height: 100vh;
   width: 100%; }
 
-/* line 20, ../sass/index.scss */
+/* line 21, ../sass/index.scss */
 body {
   background: url("../images/stuff.jpg") no-repeat 50% 50% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
 
-/* line 25, ../sass/index.scss */
+/* line 26, ../sass/index.scss */
 :disabled, .disabled {
   pointer-events: none; }
 
-/* line 29, ../sass/index.scss */
+/* line 30, ../sass/index.scss */
 a {
   text-decoration: none; }
 
-/* line 33, ../sass/index.scss */
+/* line 34, ../sass/index.scss */
 .content {
   width: 100%;
   padding: 20px; }
 
-/* line 38, ../sass/index.scss */
+/* line 39, ../sass/index.scss */
 .grid__col {
   border: 1px solid #ff0000;
   position: relative;
   top: 500px; }
-  /* line 43, ../sass/index.scss */
-  .grid__col.col-centered {
+  /* line 44, ../sass/index.scss */
+  .grid__col.button-col-centered {
     text-align: center; }
 
-/* line 51, ../sass/index.scss */
+/* line 4, ../sass/_buttons.scss */
 .button.frosted {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  color: #08c;
   visibility: visible; }
-  /* line 58, ../sass/index.scss */
+  /* line 10, ../sass/_buttons.scss */
+  .button.frosted.flex-button {
+    display: block;
+    max-width: 200px;
+    min-width: none;
+    margin: 0 auto; }
+    /* line 16, ../sass/_buttons.scss */
+    .button.frosted.flex-button div {
+      display: block;
+      width: auto;
+      text-align: center; }
+  /* line 23, ../sass/_buttons.scss */
   .button.frosted::before {
     visibility: visible;
     content: '';
@@ -549,14 +560,11 @@ a {
     filter: url("blur.svg#blur");
     -webkit-filter: url("css/blur.svg#blur");
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='15'); }
-  /* line 74, ../sass/index.scss */
+  /* line 39, ../sass/_buttons.scss */
   .button.frosted div {
     padding: 10px 15px;
-    max-width: 200px;
-    min-width: 75px;
-    width: 20%;
-    color: #ccc;
-    background: rgba(235, 235, 235, 0.2);
+    color: #8D8D8D;
+    background: rgba(255, 0, 0, 0.2);
     position: relative;
     display: inline-block;
     visibility: visible;
@@ -565,8 +573,8 @@ a {
     -ms-transition: background 0.3s ease;
     -o-transition: background 0.3s ease;
     transition: background 0.3s ease; }
-    /* line 87, ../sass/index.scss */
+    /* line 48, ../sass/_buttons.scss */
     .button.frosted div:hover {
-      background: rgba(235, 235, 235, 0.1); }
+      background: rgba(255, 0, 0, 0.1); }
 
 /*# sourceMappingURL=index.css.map */
