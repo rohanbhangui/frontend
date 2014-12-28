@@ -25,7 +25,6 @@
 // }
 
 jQuery(function($) {
-	"use strict";
 
 	$(".button.frosted").each(function(index) {
 		var $this = $(this),
@@ -40,8 +39,9 @@ jQuery(function($) {
 	        "background-repeat": $parentWithBackground.css("background-repeat"),
 	        "background-size": $parentWithBackground.css("background-size"),
 	        "background-position": $parentWithBackground.css("background-position"),
-	        "background-attachment": $parentWithBackground.css("background-attachment")
-	    });  
+	        "background-attachment": $parentWithBackground.css("background-attachment"),
+
+	    });
 	});
 });
  
