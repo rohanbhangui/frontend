@@ -516,14 +516,9 @@ a {
   width: 100%;
   padding: 20px; }
 
-/* line 39, ../sass/index.scss */
-.grid__col {
-  border: 1px solid #ff0000;
-  position: relative;
-  top: 500px; }
-  /* line 44, ../sass/index.scss */
-  .grid__col.button-col-centered {
-    text-align: center; }
+/* line 41, ../sass/index.scss */
+.grid__col.button-col-centered {
+  text-align: center; }
 
 /* line 4, ../sass/_buttons.scss */
 .button.frosted {
@@ -532,13 +527,13 @@ a {
   overflow: hidden;
   visibility: visible; }
   /* line 10, ../sass/_buttons.scss */
-  .button.frosted.flex-button {
+  .button.frosted.flex-width {
     display: block;
     max-width: 200px;
     min-width: none;
     margin: 0 auto; }
     /* line 16, ../sass/_buttons.scss */
-    .button.frosted.flex-button div {
+    .button.frosted.flex-width div {
       display: block;
       width: auto;
       text-align: center; }
@@ -564,7 +559,7 @@ a {
   .button.frosted div {
     padding: 10px 15px;
     color: #8D8D8D;
-    background: rgba(255, 0, 0, 0.2);
+    background: rgba(234, 234, 234, 0.2);
     position: relative;
     display: inline-block;
     visibility: visible;
@@ -575,6 +570,6 @@ a {
     transition: background 0.3s ease; }
     /* line 48, ../sass/_buttons.scss */
     .button.frosted div:hover {
-      background: rgba(255, 0, 0, 0.1); }
+      background: rgba(234, 234, 234, 0.1); }
 
 /*# sourceMappingURL=index.css.map */

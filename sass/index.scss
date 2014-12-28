@@ -37,9 +37,6 @@ a {
 }
 
 .grid__col {
-    border: 1px solid #ff0000;
-    position: relative;
-    top: 500px;
 
     &.button-col-centered {
         text-align: center;
@@ -47,11 +44,5 @@ a {
 }
 
 .button {
-    @include button(#ff0000, #8D8D8D, none, 200px);
+    @include button(#eaeaea, #8D8D8D, none, 200px);
 }
-
-
-
-// .btn-2 {
-//     @include button(#ff0000, black);
-// }
