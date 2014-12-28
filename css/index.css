@@ -520,56 +520,61 @@ a {
 .grid__col.button-col-centered {
   text-align: center; }
 
-/* line 4, ../sass/_buttons.scss */
-.button.frosted {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  visibility: visible; }
-  /* line 10, ../sass/_buttons.scss */
-  .button.frosted.flex-width {
+/* line 46, ../sass/index.scss */
+.button {
+  background: #fff;
+  color: #eaeaea; }
+  /* line 6, ../sass/_buttons.scss */
+  .button.flex-width {
     display: block;
-    max-width: 200px;
+    width: 200px;
     min-width: none;
     margin: 0 auto; }
-    /* line 16, ../sass/_buttons.scss */
-    .button.frosted.flex-width div {
+    /* line 12, ../sass/_buttons.scss */
+    .button.flex-width div {
       display: block;
       width: auto;
-      text-align: center; }
-  /* line 23, ../sass/_buttons.scss */
-  .button.frosted::before {
-    visibility: visible;
-    content: '';
-    position: absolute;
-    display: block;
-    width: 120%;
-    height: 110%;
-    top: -5%;
-    bottom: -5%;
-    background: inherit;
-    -webkit-filter: url("blur.svg#blur");
-    -moz-filter: url("blur.svg#blur");
-    -ms-filter: url("blur.svg#blur");
-    -o-filter: url("blur.svg#blur");
-    filter: url("blur.svg#blur");
-    -webkit-filter: url("css/blur.svg#blur");
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='15'); }
-  /* line 39, ../sass/_buttons.scss */
-  .button.frosted div {
-    padding: 10px 15px;
-    color: #8D8D8D;
-    background: rgba(234, 234, 234, 0.2);
+      text-align: center;
+      padding: 5px; }
+  /* line 21, ../sass/_buttons.scss */
+  .button.frosted {
     position: relative;
     display: inline-block;
-    visibility: visible;
-    -webkit-transition: background 0.3s ease;
-    -moz-transition: background 0.3s ease;
-    -ms-transition: background 0.3s ease;
-    -o-transition: background 0.3s ease;
-    transition: background 0.3s ease; }
-    /* line 48, ../sass/_buttons.scss */
-    .button.frosted div:hover {
-      background: rgba(234, 234, 234, 0.1); }
+    overflow: hidden;
+    visibility: visible; }
+    /* line 27, ../sass/_buttons.scss */
+    .button.frosted::before {
+      visibility: visible;
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120%;
+      height: 110%;
+      top: -5%;
+      bottom: -5%;
+      background: inherit;
+      -webkit-filter: url("blur.svg#blur");
+      -moz-filter: url("blur.svg#blur");
+      -ms-filter: url("blur.svg#blur");
+      -o-filter: url("blur.svg#blur");
+      filter: url("blur.svg#blur");
+      -webkit-filter: url("css/blur.svg#blur");
+      filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='15'); }
+    /* line 43, ../sass/_buttons.scss */
+    .button.frosted div {
+      padding: 10px 15px;
+      color: #eaeaea;
+      background: rgba(255, 255, 255, 0.2);
+      position: relative;
+      display: inline-block;
+      visibility: visible;
+      -webkit-transition: background 0.3s ease;
+      -moz-transition: background 0.3s ease;
+      -ms-transition: background 0.3s ease;
+      -o-transition: background 0.3s ease;
+      transition: background 0.3s ease; }
+      /* line 52, ../sass/_buttons.scss */
+      .button.frosted div:hover {
+        background: rgba(255, 255, 255, 0.4); }
 
 /*# sourceMappingURL=index.css.map */

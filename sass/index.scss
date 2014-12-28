@@ -44,5 +44,5 @@ a {
 }
 
 .button {
-    @include button(#eaeaea, #8D8D8D, none, 200px);
+    @include button(#fff, #eaeaea, none, 200px);
 }
