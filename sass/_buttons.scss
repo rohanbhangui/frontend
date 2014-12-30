@@ -8,15 +8,91 @@
         @include vendor-prefix(transition, background 0.3s ease);
     }
 
-    &.block {
-        display: block;
-        margin: 0 auto;
-
+    &.success {
         div {
-            display: block;
-            width: auto;
-            text-align: center;
-            padding: 10px 0;
+            background: $success;
+            color: $white;
+
+            &:hover {
+                background: darken($success, 5%);
+            }
+        }
+
+        &.inverted {
+            div {
+                background: $white;
+                color: $green;
+
+                &:hover {
+                    background: darken($white, 5%);
+                }
+            }
+        }
+    }
+
+    &.error {
+        div {
+            background: $error;
+            color: $white;
+
+            &:hover {
+                background: darken($error, 5%);
+            }
+        }
+
+        &.inverted {
+            div {
+                background: $white;
+                color: $error;
+
+                &:hover {
+                    background: darken($white, 5%);
+                }
+            }
+        }
+    }
+
+    &.info {
+        div {
+            background: $info;
+            color: $white;
+
+            &:hover {
+                background: darken($info, 5%);
+            }
+        }
+
+        &.inverted {
+            div {
+                background: $white;
+                color: $info;
+
+                &:hover {
+                    background: darken($white, 5%);
+                }
+            }
+        }
+    }
+
+    &.warning {
+        div {
+            background: $warning;
+            color: $white;
+
+            &:hover {
+                background: darken($warning, 5%);
+            }
+        }
+
+        &.inverted {
+            div {
+                background: $white;
+                color: $warning;
+
+                &:hover {
+                    background: darken($white, 5%);
+                }
+            }
         }
     }
     
@@ -57,91 +133,15 @@
         }
     }
 
-    &.success {
+    &.block {
+        display: block;
+        margin: 0 auto;
+
         div {
-            background: $success;
-            color: $white;
-
-            &:hover {
-                background: darken($success, 20%);
-            }
-        }
-
-        &.inverted {
-            div {
-                background: $white;
-                color: $green;
-
-                &:hover {
-                    background: darken($white, 20%);
-                }
-            }
-        }
-    }
-
-    &.error {
-        div {
-            background: $error;
-            color: $white;
-
-            &:hover {
-                background: darken($error, 20%);
-            }
-        }
-
-        &.inverted {
-            div {
-                background: $white;
-                color: $error;
-
-                &:hover {
-                    background: darken($white, 20%);
-                }
-            }
-        }
-    }
-
-    &.info {
-        div {
-            background: $info;
-            color: $white;
-
-            &:hover {
-                background: darken($info, 20%);
-            }
-        }
-
-        &.inverted {
-            div {
-                background: $white;
-                color: $info;
-
-                &:hover {
-                    background: darken($white, 20%);
-                }
-            }
-        }
-    }
-
-    &.warning {
-        div {
-            background: $warning;
-            color: $white;
-
-            &:hover {
-                background: darken($warning, 20%);
-            }
-        }
-
-        &.inverted {
-            div {
-                background: $white;
-                color: $warning;
-
-                &:hover {
-                    background: darken($white, 20%);
-                }
-            }
+            display: block;
+            width: auto;
+            text-align: center;
+            padding: 10px 0;
         }
     }
 }

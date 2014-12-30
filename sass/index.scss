@@ -46,16 +46,21 @@ a {
     text-align: right;
 }
 
+.spacer-sm-t {
+    margin-top: 10px;
+}
+
 /* ------------------------- */
 
 
 .content {
-    width: 100%;
+    max-width: 1200px;
+    margin: auto;
     padding: 20px;
 }
 
 
 
 .button {
-    @include button($blue-gray, $white);
+    @include button($white, $white);
 }

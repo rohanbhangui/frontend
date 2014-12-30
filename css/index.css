@@ -524,15 +524,20 @@ a {
 .text-right {
   text-align: right; }
 
+/* line 49, ../sass/index.scss */
+.spacer-sm-t {
+  margin-top: 10px; }
+
 /* ------------------------- */
-/* line 52, ../sass/index.scss */
+/* line 56, ../sass/index.scss */
 .content {
-  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   padding: 20px; }
 
 /* line 3, ../sass/_buttons.scss */
 .button div {
-  background: #607D8B;
+  background: #fff;
   color: #fff;
   display: inline-block;
   padding: 10px 15px;
@@ -541,23 +546,69 @@ a {
   -ms-transition: background 0.3s ease;
   -o-transition: background 0.3s ease;
   transition: background 0.3s ease; }
-/* line 11, ../sass/_buttons.scss */
-.button.block {
-  display: block;
-  margin: 0 auto; }
-  /* line 15, ../sass/_buttons.scss */
-  .button.block div {
-    display: block;
-    width: auto;
-    text-align: center;
-    padding: 10px 0; }
-/* line 24, ../sass/_buttons.scss */
+/* line 12, ../sass/_buttons.scss */
+.button.success div {
+  background: #4CAF50;
+  color: #fff; }
+  /* line 16, ../sass/_buttons.scss */
+  .button.success div:hover {
+    background: #449d48; }
+/* line 22, ../sass/_buttons.scss */
+.button.success.inverted div {
+  background: #fff;
+  color: #4CAF50; }
+  /* line 26, ../sass/_buttons.scss */
+  .button.success.inverted div:hover {
+    background: #f2f2f2; }
+/* line 34, ../sass/_buttons.scss */
+.button.error div {
+  background: #F44336;
+  color: #fff; }
+  /* line 38, ../sass/_buttons.scss */
+  .button.error div:hover {
+    background: #f32c1e; }
+/* line 44, ../sass/_buttons.scss */
+.button.error.inverted div {
+  background: #fff;
+  color: #F44336; }
+  /* line 48, ../sass/_buttons.scss */
+  .button.error.inverted div:hover {
+    background: #f2f2f2; }
+/* line 56, ../sass/_buttons.scss */
+.button.info div {
+  background: #03A9F4;
+  color: #fff; }
+  /* line 60, ../sass/_buttons.scss */
+  .button.info div:hover {
+    background: #0398db; }
+/* line 66, ../sass/_buttons.scss */
+.button.info.inverted div {
+  background: #fff;
+  color: #03A9F4; }
+  /* line 70, ../sass/_buttons.scss */
+  .button.info.inverted div:hover {
+    background: #f2f2f2; }
+/* line 78, ../sass/_buttons.scss */
+.button.warning div {
+  background: #FFC107;
+  color: #fff; }
+  /* line 82, ../sass/_buttons.scss */
+  .button.warning div:hover {
+    background: #ecb100; }
+/* line 88, ../sass/_buttons.scss */
+.button.warning.inverted div {
+  background: #fff;
+  color: #FFC107; }
+  /* line 92, ../sass/_buttons.scss */
+  .button.warning.inverted div:hover {
+    background: #f2f2f2; }
+/* line 100, ../sass/_buttons.scss */
 .button.frosted {
   position: relative;
   display: inline-block;
   overflow: hidden;
   visibility: visible; }
-  /* line 30, ../sass/_buttons.scss */
+  /* line 106, ../sass/_buttons.scss */
   .button.frosted::before {
     visibility: visible;
     content: '';
@@ -575,72 +626,26 @@ a {
     filter: url("blur.svg#blur");
     -webkit-filter: url("css/blur.svg#blur");
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='15'); }
-  /* line 46, ../sass/_buttons.scss */
+  /* line 122, ../sass/_buttons.scss */
   .button.frosted div {
     padding: 10px 15px;
     color: #fff;
-    background: rgba(96, 125, 139, 0.2);
+    background: rgba(255, 255, 255, 0.2);
     position: relative;
     display: inline-block;
     visibility: visible; }
-    /* line 54, ../sass/_buttons.scss */
+    /* line 130, ../sass/_buttons.scss */
     .button.frosted div:hover {
-      background: rgba(96, 125, 139, 0.4); }
-/* line 61, ../sass/_buttons.scss */
-.button.success div {
-  background: #4CAF50;
-  color: #fff; }
-  /* line 65, ../sass/_buttons.scss */
-  .button.success div:hover {
-    background: #2d682f; }
-/* line 71, ../sass/_buttons.scss */
-.button.success.inverted div {
-  background: #fff;
-  color: #4CAF50; }
-  /* line 75, ../sass/_buttons.scss */
-  .button.success.inverted div:hover {
-    background: #cccccc; }
-/* line 83, ../sass/_buttons.scss */
-.button.error div {
-  background: #F44336;
-  color: #fff; }
-  /* line 87, ../sass/_buttons.scss */
-  .button.error div:hover {
-    background: #ba160a; }
-/* line 93, ../sass/_buttons.scss */
-.button.error.inverted div {
-  background: #fff;
-  color: #F44336; }
-  /* line 97, ../sass/_buttons.scss */
-  .button.error.inverted div:hover {
-    background: #cccccc; }
-/* line 105, ../sass/_buttons.scss */
-.button.info div {
-  background: #03A9F4;
-  color: #fff; }
-  /* line 109, ../sass/_buttons.scss */
-  .button.info div:hover {
-    background: #02638f; }
-/* line 115, ../sass/_buttons.scss */
-.button.info.inverted div {
-  background: #fff;
-  color: #03A9F4; }
-  /* line 119, ../sass/_buttons.scss */
-  .button.info.inverted div:hover {
-    background: #cccccc; }
-/* line 127, ../sass/_buttons.scss */
-.button.warning div {
-  background: #FFC107;
-  color: #fff; }
-  /* line 131, ../sass/_buttons.scss */
-  .button.warning div:hover {
-    background: #a07800; }
-/* line 137, ../sass/_buttons.scss */
-.button.warning.inverted div {
-  background: #fff;
-  color: #FFC107; }
-  /* line 141, ../sass/_buttons.scss */
-  .button.warning.inverted div:hover {
-    background: #cccccc; }
+      background: rgba(255, 255, 255, 0.4); }
+/* line 136, ../sass/_buttons.scss */
+.button.block {
+  display: block;
+  margin: 0 auto; }
+  /* line 140, ../sass/_buttons.scss */
+  .button.block div {
+    display: block;
+    width: auto;
+    text-align: center;
+    padding: 10px 0; }
 
 /*# sourceMappingURL=index.css.map */
