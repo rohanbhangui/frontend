@@ -1,0 +1,102 @@
+@mixin input($background, $color) {
+
+	$border-amount: 2px;
+	$input-color: #484848;
+
+	input {
+		padding: 10px 15px;
+		background: none;
+		border: none;
+		border-bottom: $border-amount solid lighten($input-color, 10%);
+		font-size: $font-baseline-size;
+		outline: none;
+		color: $input-color;
+	
+		//unexpected results sometimes
+		&::-webkit-input-placeholder {
+		  color: lighten($input-color, 10%);
+		}
+		&::-moz-placeholder {
+		  color: lighten($input-color, 10%);
+		}
+		&:-ms-input-placeholder {
+		  color: lighten($input-color, 10%);
+		}
+		&:-moz-placeholder {
+		  color: lighten($input-color, 10%);
+		}
+
+		&:focus {
+			border-bottom-color: lighten($input-color, 10%);
+		}
+	}
+
+	@each $name, $color in (success: $success, error: $error, warning: $warning, info: $info) {
+		&.#{$name} {
+			input {
+				border-bottom-color: $color;
+			}
+		}
+	}
+
+	//this is experiemental and has only been tested in chrome, firefox and safari
+	&.frosted {
+	    position: relative;
+	    display: inline-block;
+	    overflow: hidden;
+	    visibility: visible;
+
+	    &::before {
+	        visibility: visible;
+	        content: '';
+	        position: absolute;
+	        display: block;
+	        width: 120%;
+	        height: 110%;
+	        top: -5%;
+	        bottom: -5%;
+	        background: inherit;
+	        @include vendor-prefix(filter, url("blur.svg#blur"));
+	        -webkit-filter: url("css/blur.svg#blur");
+	        filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
+	    }
+
+	    input {
+	        padding: 10px 15px 12px;
+	        color: $color;
+	        background: rgba($background, 0.2);
+	        position: relative;
+	        display: inline-block;
+	        visibility: visible;
+	        border: none;
+
+	        &::-webkit-input-placeholder {
+	          color: darken($color, 10%);
+	        }
+	        &::-moz-placeholder {
+	          color: darken($color, 10%);
+	        }
+	        &:-ms-input-placeholder {
+	          color: darken($color, 10%);
+	        }
+	        &:-moz-placeholder {
+	          color: darken($color, 10%);
+	        }
+
+	        &:focus {
+	            background: rgba($background, 0.4);
+	        }
+	    }
+	}
+
+	&.block {
+        display: block;
+        margin: 0 auto;
+
+        input {
+            display: block;
+            width: 100%;
+            padding: (10px) 5px;
+        }
+    }
+}

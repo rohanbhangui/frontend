@@ -58,7 +58,6 @@
             @include vendor-prefix(filter, url("blur.svg#blur"));
             -webkit-filter: url("css/blur.svg#blur");
             filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
-
         }
 
         div {

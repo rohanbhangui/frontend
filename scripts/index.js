@@ -26,7 +26,7 @@
 
 jQuery(function($) {
 
-	$(".button.frosted").each(function(index) {
+	$(".button.frosted, .input.frosted").each(function(index) {
 		var $this = $(this),
 	        $parentWithBackground;
 	    

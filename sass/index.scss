@@ -1,6 +1,7 @@
 @import "settings";
 @import "mixins";
 @import "buttons";
+@import "inputs";
 @import "grid";
 
 * {
@@ -63,4 +64,8 @@ a {
 
 .button {
     @include button($white, $white);
+}
+
+.input {
+    @include input($gray, $white);
 }
