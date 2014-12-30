@@ -1,19 +1,22 @@
-@mixin button($background, $color, $flex-min-width, $flex-max-width) {
+@mixin button($background, $color) {
 
-    background: $background;
-    color: $color;
+    div {
+        background: $background;
+        color: $color;
+        display: inline-block;
+        padding: 10px 15px;
+        @include vendor-prefix(transition, background 0.3s ease);
+    }
 
-    &.flex-width {
+    &.block {
         display: block;
-        width: $flex-max-width;
-        min-width: $flex-min-width;
         margin: 0 auto;
 
         div {
             display: block;
             width: auto;
             text-align: center;
-            padding: 5px;
+            padding: 10px 0;
         }
     }
     
@@ -47,10 +50,97 @@
             position: relative;
             display: inline-block;
             visibility: visible;
-            @include vendor-prefix(transition, background 0.3s ease);
 
             &:hover {
                 background: rgba($background, 0.4);
+            }
+        }
+    }
+
+    &.success {
+        div {
+            background: $success;
+            color: $white;
+
+            &:hover {
+                background: darken($success, 20%);
+            }
+        }
+
+        &.inverted {
+            div {
+                background: $white;
+                color: $green;
+
+                &:hover {
+                    background: darken($white, 20%);
+                }
+            }
+        }
+    }
+
+    &.error {
+        div {
+            background: $error;
+            color: $white;
+
+            &:hover {
+                background: darken($error, 20%);
+            }
+        }
+
+        &.inverted {
+            div {
+                background: $white;
+                color: $error;
+
+                &:hover {
+                    background: darken($white, 20%);
+                }
+            }
+        }
+    }
+
+    &.info {
+        div {
+            background: $info;
+            color: $white;
+
+            &:hover {
+                background: darken($info, 20%);
+            }
+        }
+
+        &.inverted {
+            div {
+                background: $white;
+                color: $info;
+
+                &:hover {
+                    background: darken($white, 20%);
+                }
+            }
+        }
+    }
+
+    &.warning {
+        div {
+            background: $warning;
+            color: $white;
+
+            &:hover {
+                background: darken($warning, 20%);
+            }
+        }
+
+        &.inverted {
+            div {
+                background: $white;
+                color: $warning;
+
+                &:hover {
+                    background: darken($white, 20%);
+                }
             }
         }
     }

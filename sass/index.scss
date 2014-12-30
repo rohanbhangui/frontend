@@ -1,3 +1,4 @@
+@import "settings";
 @import "mixins";
 @import "buttons";
 @import "grid";
@@ -31,18 +32,30 @@ a {
     text-decoration: none;
 }
 
+/* ---- Utility Classes ---- */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* ------------------------- */
+
+
 .content {
     width: 100%;
     padding: 20px;
 }
 
-.grid__col {
 
-    &.button-col-centered {
-        text-align: center;
-    }
-}
 
 .button {
-    @include button(#fff, #eaeaea, none, 200px);
+    @include button($blue-gray, $white);
 }

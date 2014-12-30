@@ -478,7 +478,7 @@
   .grid .grid__col--am {
     vertical-align: middle; }
 
-/* line 5, ../sass/index.scss */
+/* line 6, ../sass/index.scss */
 * {
   margin: 0px;
   padding: 0px;
@@ -489,12 +489,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 16, ../sass/index.scss */
+/* line 17, ../sass/index.scss */
 html, body {
   min-height: 100vh;
   width: 100%; }
 
-/* line 21, ../sass/index.scss */
+/* line 22, ../sass/index.scss */
 body {
   background: url("../images/stuff.jpg") no-repeat 50% 50% fixed;
   -webkit-background-size: cover;
@@ -503,78 +503,144 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 26, ../sass/index.scss */
+/* line 27, ../sass/index.scss */
 :disabled, .disabled {
   pointer-events: none; }
 
-/* line 30, ../sass/index.scss */
+/* line 31, ../sass/index.scss */
 a {
   text-decoration: none; }
 
-/* line 34, ../sass/index.scss */
+/* ---- Utility Classes ---- */
+/* line 37, ../sass/index.scss */
+.text-center {
+  text-align: center; }
+
+/* line 41, ../sass/index.scss */
+.text-left {
+  text-align: left; }
+
+/* line 45, ../sass/index.scss */
+.text-right {
+  text-align: right; }
+
+/* ------------------------- */
+/* line 52, ../sass/index.scss */
 .content {
   width: 100%;
   padding: 20px; }
 
-/* line 41, ../sass/index.scss */
-.grid__col.button-col-centered {
-  text-align: center; }
-
-/* line 46, ../sass/index.scss */
-.button {
-  background: #fff;
-  color: #eaeaea; }
-  /* line 6, ../sass/_buttons.scss */
-  .button.flex-width {
+/* line 3, ../sass/_buttons.scss */
+.button div {
+  background: #607D8B;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease; }
+/* line 11, ../sass/_buttons.scss */
+.button.block {
+  display: block;
+  margin: 0 auto; }
+  /* line 15, ../sass/_buttons.scss */
+  .button.block div {
     display: block;
-    width: 200px;
-    min-width: none;
-    margin: 0 auto; }
-    /* line 12, ../sass/_buttons.scss */
-    .button.flex-width div {
-      display: block;
-      width: auto;
-      text-align: center;
-      padding: 5px; }
-  /* line 21, ../sass/_buttons.scss */
-  .button.frosted {
+    width: auto;
+    text-align: center;
+    padding: 10px 0; }
+/* line 24, ../sass/_buttons.scss */
+.button.frosted {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  visibility: visible; }
+  /* line 30, ../sass/_buttons.scss */
+  .button.frosted::before {
+    visibility: visible;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120%;
+    height: 110%;
+    top: -5%;
+    bottom: -5%;
+    background: inherit;
+    -webkit-filter: url("blur.svg#blur");
+    -moz-filter: url("blur.svg#blur");
+    -ms-filter: url("blur.svg#blur");
+    -o-filter: url("blur.svg#blur");
+    filter: url("blur.svg#blur");
+    -webkit-filter: url("css/blur.svg#blur");
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='15'); }
+  /* line 46, ../sass/_buttons.scss */
+  .button.frosted div {
+    padding: 10px 15px;
+    color: #fff;
+    background: rgba(96, 125, 139, 0.2);
     position: relative;
     display: inline-block;
-    overflow: hidden;
     visibility: visible; }
-    /* line 27, ../sass/_buttons.scss */
-    .button.frosted::before {
-      visibility: visible;
-      content: '';
-      position: absolute;
-      display: block;
-      width: 120%;
-      height: 110%;
-      top: -5%;
-      bottom: -5%;
-      background: inherit;
-      -webkit-filter: url("blur.svg#blur");
-      -moz-filter: url("blur.svg#blur");
-      -ms-filter: url("blur.svg#blur");
-      -o-filter: url("blur.svg#blur");
-      filter: url("blur.svg#blur");
-      -webkit-filter: url("css/blur.svg#blur");
-      filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='15'); }
-    /* line 43, ../sass/_buttons.scss */
-    .button.frosted div {
-      padding: 10px 15px;
-      color: #eaeaea;
-      background: rgba(255, 255, 255, 0.2);
-      position: relative;
-      display: inline-block;
-      visibility: visible;
-      -webkit-transition: background 0.3s ease;
-      -moz-transition: background 0.3s ease;
-      -ms-transition: background 0.3s ease;
-      -o-transition: background 0.3s ease;
-      transition: background 0.3s ease; }
-      /* line 52, ../sass/_buttons.scss */
-      .button.frosted div:hover {
-        background: rgba(255, 255, 255, 0.4); }
+    /* line 54, ../sass/_buttons.scss */
+    .button.frosted div:hover {
+      background: rgba(96, 125, 139, 0.4); }
+/* line 61, ../sass/_buttons.scss */
+.button.success div {
+  background: #4CAF50;
+  color: #fff; }
+  /* line 65, ../sass/_buttons.scss */
+  .button.success div:hover {
+    background: #2d682f; }
+/* line 71, ../sass/_buttons.scss */
+.button.success.inverted div {
+  background: #fff;
+  color: #4CAF50; }
+  /* line 75, ../sass/_buttons.scss */
+  .button.success.inverted div:hover {
+    background: #cccccc; }
+/* line 83, ../sass/_buttons.scss */
+.button.error div {
+  background: #F44336;
+  color: #fff; }
+  /* line 87, ../sass/_buttons.scss */
+  .button.error div:hover {
+    background: #ba160a; }
+/* line 93, ../sass/_buttons.scss */
+.button.error.inverted div {
+  background: #fff;
+  color: #F44336; }
+  /* line 97, ../sass/_buttons.scss */
+  .button.error.inverted div:hover {
+    background: #cccccc; }
+/* line 105, ../sass/_buttons.scss */
+.button.info div {
+  background: #03A9F4;
+  color: #fff; }
+  /* line 109, ../sass/_buttons.scss */
+  .button.info div:hover {
+    background: #02638f; }
+/* line 115, ../sass/_buttons.scss */
+.button.info.inverted div {
+  background: #fff;
+  color: #03A9F4; }
+  /* line 119, ../sass/_buttons.scss */
+  .button.info.inverted div:hover {
+    background: #cccccc; }
+/* line 127, ../sass/_buttons.scss */
+.button.warning div {
+  background: #FFC107;
+  color: #fff; }
+  /* line 131, ../sass/_buttons.scss */
+  .button.warning div:hover {
+    background: #a07800; }
+/* line 137, ../sass/_buttons.scss */
+.button.warning.inverted div {
+  background: #fff;
+  color: #FFC107; }
+  /* line 141, ../sass/_buttons.scss */
+  .button.warning.inverted div:hover {
+    background: #cccccc; }
 
 /*# sourceMappingURL=index.css.map */

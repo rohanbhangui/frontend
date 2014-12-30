@@ -1,0 +1,39 @@
+// from the google material design spec page to adjust color hue and saturation use sass functions
+
+$white: #fff;
+$grey: #9E9E9E;
+$blue-grey: #607D8B;
+$black: #000;
+
+$pink: #E91E63;
+$red: #F44336;
+$deep-orange: #FF5722;
+$orange: #FF9800;
+$brown: #795548;
+$amber: #FFC107;
+$yellow: #FFEB3B;
+$lime: #CDDC39;
+$light-green: #8BC34A;
+$green: #4CAF50;
+$teal: #009688;
+$cyan: #00BCD4;
+$light-blue: #03A9F4;
+$blue: #03A9F4;
+$indigo: #3F51B5;
+$deep-purple: #673AB7;
+$purple: #9C27B0;
+
+
+//alt values (aliases you can use)
+
+$gray: $grey;
+$blue-gray: $blue-grey;
+
+//success
+$success: $green;
+//info
+$info: $blue;
+//warning
+$warning: $amber;
+//error
+$error: $red;
