@@ -8,93 +8,123 @@
         @include vendor-prefix(transition, background 0.3s ease);
     }
 
-    &.success {
-        div {
-            background: $success;
-            color: $white;
-
-            &:hover {
-                background: darken($success, 5%);
-            }
-        }
-
-        &.inverted {
+    @each $name, $color in (success: $success, error: $error, warning: $warning, info: $info) {
+        &.#{$name} {
             div {
-                background: $white;
-                color: $green;
+                background: $color;
+                color: $white;
 
                 &:hover {
-                    background: darken($white, 5%);
+                    background: lighten($color, 5%);
+                }
+            }
+
+            &.inverted {
+                div {
+                    background: $white;
+                    color: $color;
+
+                    &:hover {
+                        background: lighten($white, 5%);
+                    }
+                }
+            }
+
+            &:active {
+                div {
+                    background: $color;
                 }
             }
         }
     }
 
-    &.error {
-        div {
-            background: $error;
-            color: $white;
+    // &.success {
+    //     div {
+    //         background: $success;
+    //         color: $white;
 
-            &:hover {
-                background: darken($error, 5%);
-            }
-        }
+    //         &:hover {
+    //             background: lighten($success, 5%);
+    //         }
+    //     }
 
-        &.inverted {
-            div {
-                background: $white;
-                color: $error;
+    //     &.inverted {
+    //         div {
+    //             background: $white;
+    //             color: $green;
 
-                &:hover {
-                    background: darken($white, 5%);
-                }
-            }
-        }
-    }
+    //             &:hover {
+    //                 background: lighten($white, 5%);
+    //             }
+    //         }
+    //     }
+    // }
 
-    &.info {
-        div {
-            background: $info;
-            color: $white;
+    // &.error {
+    //     div {
+    //         background: $error;
+    //         color: $white;
 
-            &:hover {
-                background: darken($info, 5%);
-            }
-        }
+    //         &:hover {
+    //             background: lighten($error, 5%);
+    //         }
+    //     }
 
-        &.inverted {
-            div {
-                background: $white;
-                color: $info;
+    //     &.inverted {
+    //         div {
+    //             background: $white;
+    //             color: $error;
 
-                &:hover {
-                    background: darken($white, 5%);
-                }
-            }
-        }
-    }
+    //             &:hover {
+    //                 background: lighten($white, 5%);
+    //             }
+    //         }
+    //     }
+    // }
 
-    &.warning {
-        div {
-            background: $warning;
-            color: $white;
+    // &.info {
+    //     div {
+    //         background: $info;
+    //         color: $white;
 
-            &:hover {
-                background: darken($warning, 5%);
-            }
-        }
+    //         &:hover {
+    //             background: lighten($info, 5%);
+    //         }
+    //     }
 
-        &.inverted {
-            div {
-                background: $white;
-                color: $warning;
+    //     &.inverted {
+    //         div {
+    //             background: $white;
+    //             color: $info;
 
-                &:hover {
-                    background: darken($white, 5%);
-                }
-            }
-        }
-    }
+    //             &:hover {
+    //                 background: lighten($white, 5%);
+    //             }
+    //         }
+    //     }
+    // }
+
+    // &.warning {
+    //     div {
+    //         background: $warning;
+    //         color: $white;
+
+    //         &:hover {
+    //             background: lighten($warning, 5%);
+    //         }
+    //     }
+
+    //     &.inverted {
+    //         div {
+    //             background: $white;
+    //             color: $warning;
+
+    //             &:hover {
+    //                 background: lighten($white, 5%);
+    //             }
+    //         }
+    //     }
+    // }
     
     //this is experiemental and has only been tested in chrome, firefox and safari
     &.frosted {
@@ -129,6 +159,12 @@
 
             &:hover {
                 background: rgba($background, 0.4);
+            }
+        }
+
+        &:active {
+            div {
+                background: rgba($background, 0.2);
             }
         }
     }

@@ -546,69 +546,81 @@ a {
   -ms-transition: background 0.3s ease;
   -o-transition: background 0.3s ease;
   transition: background 0.3s ease; }
-/* line 12, ../sass/_buttons.scss */
+/* line 13, ../sass/_buttons.scss */
 .button.success div {
   background: #4CAF50;
   color: #fff; }
-  /* line 16, ../sass/_buttons.scss */
+  /* line 17, ../sass/_buttons.scss */
   .button.success div:hover {
-    background: #449d48; }
-/* line 22, ../sass/_buttons.scss */
+    background: #5cb860; }
+/* line 23, ../sass/_buttons.scss */
 .button.success.inverted div {
   background: #fff;
   color: #4CAF50; }
-  /* line 26, ../sass/_buttons.scss */
+  /* line 27, ../sass/_buttons.scss */
   .button.success.inverted div:hover {
-    background: #f2f2f2; }
+    background: white; }
 /* line 34, ../sass/_buttons.scss */
+.button.success:active div {
+  background: #4CAF50; }
+/* line 13, ../sass/_buttons.scss */
 .button.error div {
   background: #F44336;
   color: #fff; }
-  /* line 38, ../sass/_buttons.scss */
+  /* line 17, ../sass/_buttons.scss */
   .button.error div:hover {
-    background: #f32c1e; }
-/* line 44, ../sass/_buttons.scss */
+    background: #f55a4e; }
+/* line 23, ../sass/_buttons.scss */
 .button.error.inverted div {
   background: #fff;
   color: #F44336; }
-  /* line 48, ../sass/_buttons.scss */
+  /* line 27, ../sass/_buttons.scss */
   .button.error.inverted div:hover {
-    background: #f2f2f2; }
-/* line 56, ../sass/_buttons.scss */
-.button.info div {
-  background: #03A9F4;
-  color: #fff; }
-  /* line 60, ../sass/_buttons.scss */
-  .button.info div:hover {
-    background: #0398db; }
-/* line 66, ../sass/_buttons.scss */
-.button.info.inverted div {
-  background: #fff;
-  color: #03A9F4; }
-  /* line 70, ../sass/_buttons.scss */
-  .button.info.inverted div:hover {
-    background: #f2f2f2; }
-/* line 78, ../sass/_buttons.scss */
+    background: white; }
+/* line 34, ../sass/_buttons.scss */
+.button.error:active div {
+  background: #F44336; }
+/* line 13, ../sass/_buttons.scss */
 .button.warning div {
   background: #FFC107;
   color: #fff; }
-  /* line 82, ../sass/_buttons.scss */
+  /* line 17, ../sass/_buttons.scss */
   .button.warning div:hover {
-    background: #ecb100; }
-/* line 88, ../sass/_buttons.scss */
+    background: #ffc721; }
+/* line 23, ../sass/_buttons.scss */
 .button.warning.inverted div {
   background: #fff;
   color: #FFC107; }
-  /* line 92, ../sass/_buttons.scss */
+  /* line 27, ../sass/_buttons.scss */
   .button.warning.inverted div:hover {
-    background: #f2f2f2; }
-/* line 100, ../sass/_buttons.scss */
+    background: white; }
+/* line 34, ../sass/_buttons.scss */
+.button.warning:active div {
+  background: #FFC107; }
+/* line 13, ../sass/_buttons.scss */
+.button.info div {
+  background: #03A9F4;
+  color: #fff; }
+  /* line 17, ../sass/_buttons.scss */
+  .button.info div:hover {
+    background: #14b4fc; }
+/* line 23, ../sass/_buttons.scss */
+.button.info.inverted div {
+  background: #fff;
+  color: #03A9F4; }
+  /* line 27, ../sass/_buttons.scss */
+  .button.info.inverted div:hover {
+    background: white; }
+/* line 34, ../sass/_buttons.scss */
+.button.info:active div {
+  background: #03A9F4; }
+/* line 130, ../sass/_buttons.scss */
 .button.frosted {
   position: relative;
   display: inline-block;
   overflow: hidden;
   visibility: visible; }
-  /* line 106, ../sass/_buttons.scss */
+  /* line 136, ../sass/_buttons.scss */
   .button.frosted::before {
     visibility: visible;
     content: '';
@@ -626,7 +638,7 @@ a {
     filter: url("blur.svg#blur");
     -webkit-filter: url("css/blur.svg#blur");
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='15'); }
-  /* line 122, ../sass/_buttons.scss */
+  /* line 152, ../sass/_buttons.scss */
   .button.frosted div {
     padding: 10px 15px;
     color: #fff;
@@ -634,14 +646,17 @@ a {
     position: relative;
     display: inline-block;
     visibility: visible; }
-    /* line 130, ../sass/_buttons.scss */
+    /* line 160, ../sass/_buttons.scss */
     .button.frosted div:hover {
       background: rgba(255, 255, 255, 0.4); }
-/* line 136, ../sass/_buttons.scss */
+  /* line 166, ../sass/_buttons.scss */
+  .button.frosted:active div {
+    background: rgba(255, 255, 255, 0.2); }
+/* line 172, ../sass/_buttons.scss */
 .button.block {
   display: block;
   margin: 0 auto; }
-  /* line 140, ../sass/_buttons.scss */
+  /* line 176, ../sass/_buttons.scss */
   .button.block div {
     display: block;
     width: auto;
