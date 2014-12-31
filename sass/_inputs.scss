@@ -36,19 +36,19 @@
 			input {
 				@if $name == white {
 					&::-webkit-input-placeholder {
-					  color: $color;
+					  color: darken($color, 20%);
 					}
 					&::-moz-placeholder {
-					  color: $color;
+					  color: darken($color, 20%);
 					}
 					&:-ms-input-placeholder {
-					  color: $color;
+					  color: darken($color, 20%);
 					}
 					&:-moz-placeholder {
-					  color: $color;
+					  color: darken($color, 20%);
 					}
 
-					color: white;
+					color: $color;
 				}
 
 				border-bottom-color: $color;
@@ -109,16 +109,16 @@
 	        border: none;
 
 	        &::-webkit-input-placeholder {
-	          color: darken($color, 10%);
+	          color: darken($color, 20%);
 	        }
 	        &::-moz-placeholder {
-	          color: darken($color, 10%);
+	          color: darken($color, 20%);
 	        }
 	        &:-ms-input-placeholder {
-	          color: darken($color, 10%);
+	          color: darken($color, 20%);
 	        }
 	        &:-moz-placeholder {
-	          color: darken($color, 10%);
+	          color: darken($color, 20%);
 	        }
 
 	        &:focus {

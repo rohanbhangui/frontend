@@ -704,20 +704,20 @@ a {
   border-bottom-color: #03A9F4; }
 /* line 36, ../sass/_inputs.scss */
 .input.white input {
-  color: white;
+  color: #fff;
   border-bottom-color: #fff; }
   /* line 38, ../sass/_inputs.scss */
   .input.white input::-webkit-input-placeholder {
-    color: #fff; }
+    color: #cccccc; }
   /* line 41, ../sass/_inputs.scss */
   .input.white input::-moz-placeholder {
-    color: #fff; }
+    color: #cccccc; }
   /* line 44, ../sass/_inputs.scss */
   .input.white input:-ms-input-placeholder {
-    color: #fff; }
+    color: #cccccc; }
   /* line 47, ../sass/_inputs.scss */
   .input.white input:-moz-placeholder {
-    color: #fff; }
+    color: #cccccc; }
 /* line 60, ../sass/_inputs.scss */
 .input.frosted {
   position: relative;
@@ -773,16 +773,16 @@ a {
     border: none; }
     /* line 111, ../sass/_inputs.scss */
     .input.frosted input::-webkit-input-placeholder {
-      color: #e6e6e6; }
+      color: #cccccc; }
     /* line 114, ../sass/_inputs.scss */
     .input.frosted input::-moz-placeholder {
-      color: #e6e6e6; }
+      color: #cccccc; }
     /* line 117, ../sass/_inputs.scss */
     .input.frosted input:-ms-input-placeholder {
-      color: #e6e6e6; }
+      color: #cccccc; }
     /* line 120, ../sass/_inputs.scss */
     .input.frosted input:-moz-placeholder {
-      color: #e6e6e6; }
+      color: #cccccc; }
     /* line 124, ../sass/_inputs.scss */
     .input.frosted input:focus {
       background: rgba(158, 158, 158, 0.4); }
