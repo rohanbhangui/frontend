@@ -31,9 +31,27 @@
 		}
 	}
 
-	@each $name, $color in (success: $success, error: $error, warning: $warning, info: $info) {
+	@each $name, $color in (success: $success, error: $error, warning: $warning, info: $info, white: $white) {
 		&.#{$name} {
+
 			input {
+				@if $name == white {
+					&::-webkit-input-placeholder {
+					  color: $color;
+					}
+					&::-moz-placeholder {
+					  color: $color;
+					}
+					&:-ms-input-placeholder {
+					  color: $color;
+					}
+					&:-moz-placeholder {
+					  color: $color;
+					}
+
+					color: white;
+				}
+
 				border-bottom-color: $color;
 			}
 		}
@@ -61,7 +79,28 @@
 	        filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
 	    }
 
+	    &.dark {
+	        input {
+	            color: $input-color;
+
+	            //unexpected results sometimes
+	            &::-webkit-input-placeholder {
+	              color: lighten($input-color, 10%);
+	            }
+	            &::-moz-placeholder {
+	              color: lighten($input-color, 10%);
+	            }
+	            &:-ms-input-placeholder {
+	              color: lighten($input-color, 10%);
+	            }
+	            &:-moz-placeholder {
+	              color: lighten($input-color, 10%);
+	            }
+	        }
+	    }
+
 	    input {
+	    	@include vendor-prefix(transition, background 0.3s ease);
 	        padding: 10px 15px 12px;
 	        color: $color;
 	        background: rgba($background, 0.2);

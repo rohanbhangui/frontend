@@ -60,6 +60,12 @@
             filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
         }
 
+        &.dark {
+            div {
+                color: #484848;
+            }
+        }
+
         div {
             padding: 10px 15px;
             color: $color;
