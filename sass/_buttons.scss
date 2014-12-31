@@ -1,4 +1,4 @@
-@mixin button($background, $color) {
+@mixin button($background: $base-grey, $color: $white) {
 
     div {
         background: $background;

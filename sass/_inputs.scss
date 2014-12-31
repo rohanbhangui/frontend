@@ -1,4 +1,4 @@
-@mixin input($background, $color) {
+@mixin input($text-color: $base-grey) {
 
 	$border-amount: 2px;
 
@@ -6,27 +6,23 @@
 		padding: 10px 15px;
 		background: none;
 		border: none;
-		border-bottom: $border-amount solid lighten($base-grey, 10%);
+		border-bottom: $border-amount solid $text-color;
 		font-size: $font-baseline-size;
 		outline: none;
-		color: $base-grey;
+		color: $text-color;
 	
 		//unexpected results sometimes
 		&::-webkit-input-placeholder {
-		  color: lighten($base-grey, 10%);
+		  color: lighten($text-color, 10%);
 		}
 		&::-moz-placeholder {
-		  color: lighten($base-grey, 10%);
+		  color: lighten($text-color, 10%);
 		}
 		&:-ms-input-placeholder {
-		  color: lighten($base-grey, 10%);
+		  color: lighten($text-color, 10%);
 		}
 		&:-moz-placeholder {
-		  color: lighten($base-grey, 10%);
-		}
-
-		&:focus {
-			border-bottom-color: lighten($base-grey, 10%);
+		  color: lighten($text-color, 10%);
 		}
 	}
 
@@ -47,9 +43,22 @@
 					&:-moz-placeholder {
 					  color: darken($color, 20%);
 					}
-
-					color: $color;
+				} @else {
+					&::-webkit-input-placeholder {
+					  color: lighten($color, 10%);
+					}
+					&::-moz-placeholder {
+					  color: lighten($color, 10%);
+					}
+					&:-ms-input-placeholder {
+					  color: lighten($color, 10%);
+					}
+					&:-moz-placeholder {
+					  color: lighten($color, 10%);
+					}					
 				}
+
+				color: $color;
 
 				border-bottom-color: $color;
 			}
@@ -84,16 +93,16 @@
 
 	            //unexpected results sometimes
 	            &::-webkit-input-placeholder {
-	              color: lighten($base-grey, 10%);
+	              color: lighten($base-grey, 15%);
 	            }
 	            &::-moz-placeholder {
-	              color: lighten($base-grey, 10%);
+	              color: lighten($base-grey, 15%);
 	            }
 	            &:-ms-input-placeholder {
-	              color: lighten($base-grey, 10%);
+	              color: lighten($base-grey, 15%);
 	            }
 	            &:-moz-placeholder {
-	              color: lighten($base-grey, 10%);
+	              color: lighten($base-grey, 15%);
 	            }
 	        }
 	    }
@@ -101,28 +110,28 @@
 	    input {
 	    	@include vendor-prefix(transition, background 0.3s ease);
 	        padding: 10px 15px 12px;
-	        color: $color;
-	        background: rgba($background, 0.2);
+	        color: $white;
+	        background: rgba($white, 0.2);
 	        position: relative;
 	        display: inline-block;
 	        visibility: visible;
 	        border: none;
 
 	        &::-webkit-input-placeholder {
-	          color: darken($color, 20%);
+	          color: rgba($white, 0.75);
 	        }
 	        &::-moz-placeholder {
-	          color: darken($color, 20%);
+	          color: rgba($white, 0.75);
 	        }
 	        &:-ms-input-placeholder {
-	          color: darken($color, 20%);
+	          color: rgba($white, 0.75);
 	        }
 	        &:-moz-placeholder {
-	          color: darken($color, 20%);
+	          color: rgba($white, 0.75);
 	        }
 
 	        &:focus {
-	            background: rgba($background, 0.4);
+	            background: rgba($white, 0.4);
 	        }
 	    }
 	}
