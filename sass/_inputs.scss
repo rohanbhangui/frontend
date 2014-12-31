@@ -1,33 +1,32 @@
 @mixin input($background, $color) {
 
 	$border-amount: 2px;
-	$input-color: #484848;
 
 	input {
 		padding: 10px 15px;
 		background: none;
 		border: none;
-		border-bottom: $border-amount solid lighten($input-color, 10%);
+		border-bottom: $border-amount solid lighten($base-grey, 10%);
 		font-size: $font-baseline-size;
 		outline: none;
-		color: $input-color;
+		color: $base-grey;
 	
 		//unexpected results sometimes
 		&::-webkit-input-placeholder {
-		  color: lighten($input-color, 10%);
+		  color: lighten($base-grey, 10%);
 		}
 		&::-moz-placeholder {
-		  color: lighten($input-color, 10%);
+		  color: lighten($base-grey, 10%);
 		}
 		&:-ms-input-placeholder {
-		  color: lighten($input-color, 10%);
+		  color: lighten($base-grey, 10%);
 		}
 		&:-moz-placeholder {
-		  color: lighten($input-color, 10%);
+		  color: lighten($base-grey, 10%);
 		}
 
 		&:focus {
-			border-bottom-color: lighten($input-color, 10%);
+			border-bottom-color: lighten($base-grey, 10%);
 		}
 	}
 
@@ -81,20 +80,20 @@
 
 	    &.dark {
 	        input {
-	            color: $input-color;
+	            color: $base-grey;
 
 	            //unexpected results sometimes
 	            &::-webkit-input-placeholder {
-	              color: lighten($input-color, 10%);
+	              color: lighten($base-grey, 10%);
 	            }
 	            &::-moz-placeholder {
-	              color: lighten($input-color, 10%);
+	              color: lighten($base-grey, 10%);
 	            }
 	            &:-ms-input-placeholder {
-	              color: lighten($input-color, 10%);
+	              color: lighten($base-grey, 10%);
 	            }
 	            &:-moz-placeholder {
-	              color: lighten($input-color, 10%);
+	              color: lighten($base-grey, 10%);
 	            }
 	        }
 	    }

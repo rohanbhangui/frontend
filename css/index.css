@@ -666,7 +666,7 @@ a {
     text-align: center;
     padding: 10px 0; }
 
-/* line 6, ../sass/_inputs.scss */
+/* line 5, ../sass/_inputs.scss */
 .input input {
   padding: 10px 15px;
   background: none;
@@ -675,56 +675,56 @@ a {
   font-size: 16px;
   outline: none;
   color: #484848; }
-  /* line 16, ../sass/_inputs.scss */
+  /* line 15, ../sass/_inputs.scss */
   .input input::-webkit-input-placeholder {
     color: #626262; }
-  /* line 19, ../sass/_inputs.scss */
+  /* line 18, ../sass/_inputs.scss */
   .input input::-moz-placeholder {
     color: #626262; }
-  /* line 22, ../sass/_inputs.scss */
+  /* line 21, ../sass/_inputs.scss */
   .input input:-ms-input-placeholder {
     color: #626262; }
-  /* line 25, ../sass/_inputs.scss */
+  /* line 24, ../sass/_inputs.scss */
   .input input:-moz-placeholder {
     color: #626262; }
-  /* line 29, ../sass/_inputs.scss */
+  /* line 28, ../sass/_inputs.scss */
   .input input:focus {
     border-bottom-color: #626262; }
-/* line 37, ../sass/_inputs.scss */
+/* line 36, ../sass/_inputs.scss */
 .input.success input {
   border-bottom-color: #4CAF50; }
-/* line 37, ../sass/_inputs.scss */
+/* line 36, ../sass/_inputs.scss */
 .input.error input {
   border-bottom-color: #F44336; }
-/* line 37, ../sass/_inputs.scss */
+/* line 36, ../sass/_inputs.scss */
 .input.warning input {
   border-bottom-color: #FFC107; }
-/* line 37, ../sass/_inputs.scss */
+/* line 36, ../sass/_inputs.scss */
 .input.info input {
   border-bottom-color: #03A9F4; }
-/* line 37, ../sass/_inputs.scss */
+/* line 36, ../sass/_inputs.scss */
 .input.white input {
   color: white;
   border-bottom-color: #fff; }
-  /* line 39, ../sass/_inputs.scss */
+  /* line 38, ../sass/_inputs.scss */
   .input.white input::-webkit-input-placeholder {
     color: #fff; }
-  /* line 42, ../sass/_inputs.scss */
+  /* line 41, ../sass/_inputs.scss */
   .input.white input::-moz-placeholder {
     color: #fff; }
-  /* line 45, ../sass/_inputs.scss */
+  /* line 44, ../sass/_inputs.scss */
   .input.white input:-ms-input-placeholder {
     color: #fff; }
-  /* line 48, ../sass/_inputs.scss */
+  /* line 47, ../sass/_inputs.scss */
   .input.white input:-moz-placeholder {
     color: #fff; }
-/* line 61, ../sass/_inputs.scss */
+/* line 60, ../sass/_inputs.scss */
 .input.frosted {
   position: relative;
   display: inline-block;
   overflow: hidden;
   visibility: visible; }
-  /* line 67, ../sass/_inputs.scss */
+  /* line 66, ../sass/_inputs.scss */
   .input.frosted::before {
     visibility: visible;
     content: '';
@@ -742,22 +742,22 @@ a {
     filter: url("blur.svg#blur");
     -webkit-filter: url("css/blur.svg#blur");
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='15'); }
-  /* line 83, ../sass/_inputs.scss */
+  /* line 82, ../sass/_inputs.scss */
   .input.frosted.dark input {
     color: #484848; }
-    /* line 87, ../sass/_inputs.scss */
+    /* line 86, ../sass/_inputs.scss */
     .input.frosted.dark input::-webkit-input-placeholder {
       color: #626262; }
-    /* line 90, ../sass/_inputs.scss */
+    /* line 89, ../sass/_inputs.scss */
     .input.frosted.dark input::-moz-placeholder {
       color: #626262; }
-    /* line 93, ../sass/_inputs.scss */
+    /* line 92, ../sass/_inputs.scss */
     .input.frosted.dark input:-ms-input-placeholder {
       color: #626262; }
-    /* line 96, ../sass/_inputs.scss */
+    /* line 95, ../sass/_inputs.scss */
     .input.frosted.dark input:-moz-placeholder {
       color: #626262; }
-  /* line 102, ../sass/_inputs.scss */
+  /* line 101, ../sass/_inputs.scss */
   .input.frosted input {
     -webkit-transition: background 0.3s ease;
     -moz-transition: background 0.3s ease;
@@ -771,26 +771,26 @@ a {
     display: inline-block;
     visibility: visible;
     border: none; }
-    /* line 112, ../sass/_inputs.scss */
+    /* line 111, ../sass/_inputs.scss */
     .input.frosted input::-webkit-input-placeholder {
       color: #e6e6e6; }
-    /* line 115, ../sass/_inputs.scss */
+    /* line 114, ../sass/_inputs.scss */
     .input.frosted input::-moz-placeholder {
       color: #e6e6e6; }
-    /* line 118, ../sass/_inputs.scss */
+    /* line 117, ../sass/_inputs.scss */
     .input.frosted input:-ms-input-placeholder {
       color: #e6e6e6; }
-    /* line 121, ../sass/_inputs.scss */
+    /* line 120, ../sass/_inputs.scss */
     .input.frosted input:-moz-placeholder {
       color: #e6e6e6; }
-    /* line 125, ../sass/_inputs.scss */
+    /* line 124, ../sass/_inputs.scss */
     .input.frosted input:focus {
       background: rgba(158, 158, 158, 0.4); }
-/* line 131, ../sass/_inputs.scss */
+/* line 130, ../sass/_inputs.scss */
 .input.block {
   display: block;
   margin: 0 auto; }
-  /* line 135, ../sass/_inputs.scss */
+  /* line 134, ../sass/_inputs.scss */
   .input.block input {
     display: block;
     width: 100%;
