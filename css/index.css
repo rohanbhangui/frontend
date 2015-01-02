@@ -486,15 +486,18 @@
   color: #484848;
   -webkit-text-stroke: 0.35px;
   -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 18, ../sass/index.scss */
+/* line 17, ../sass/index.scss */
 html, body {
   min-height: 100vh;
   width: 100%; }
 
-/* line 23, ../sass/index.scss */
+/* line 22, ../sass/index.scss */
 body {
   background: url("../images/stuff.jpg") no-repeat 50% 50% fixed;
   -webkit-background-size: cover;
@@ -503,33 +506,33 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 28, ../sass/index.scss */
+/* line 27, ../sass/index.scss */
 :disabled, .disabled {
   pointer-events: none; }
 
-/* line 32, ../sass/index.scss */
+/* line 31, ../sass/index.scss */
 a {
   text-decoration: none; }
 
 /* ---- Utility Classes ---- */
-/* line 38, ../sass/index.scss */
+/* line 37, ../sass/index.scss */
 .text-center {
   text-align: center; }
 
-/* line 42, ../sass/index.scss */
+/* line 41, ../sass/index.scss */
 .text-left {
   text-align: left; }
 
-/* line 46, ../sass/index.scss */
+/* line 45, ../sass/index.scss */
 .text-right {
   text-align: right; }
 
-/* line 50, ../sass/index.scss */
+/* line 49, ../sass/index.scss */
 .spacer-sm-t {
   margin-top: 10px; }
 
 /* ------------------------- */
-/* line 57, ../sass/index.scss */
+/* line 56, ../sass/index.scss */
 .content {
   max-width: 1200px;
   margin: auto;
